@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <!-- Root -->
+    <xs:element name="vtinstitute">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="students">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="student" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="idcard" type="idcardType"/>
+                                        <xs:element name="firstname" type="nameType"/>
+                                        <xs:element name="lastname" type="lastnameType"/>
+                                        <xs:element name="email" type="emailType"/>
+                                        <xs:element name="phone" type="phoneType"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Tipos simples -->
+    <xs:simpleType name="idcardType">
+        <!-- exactamente 8 dígitos -->
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nameType">
+        <!-- nombres cortos: letras (incluye acentos y ñ), espacios, guiones, apóstrofes -->
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="50"/>
+            <xs:pattern value="[A-Za-zÁÉÍÓÚáéíóúÑñÜü'\- ]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="lastnameType">
+        <!-- apellidos más largos permitidos -->
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="100"/>
+            <xs:pattern value="[A-Za-zÁÉÍÓÚáéíóúÑñÜü'\- ]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="emailType">
+        <!-- patrón básico de email (no cubre todos los casos extremos, pero vale para correos usuales) -->
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[A-Za-z]{2,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="phoneType">
+        <!-- 9 dígitos, empieza por 6-9 (España) -->
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[6-9][0-9]{8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
+

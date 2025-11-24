@@ -1,0 +1,36 @@
+---------------------------------------------------------------------------------------------
+subject_passed_IRH_2526
+---------------------------------------------------------------------------------------------
+CREATE OR REPLACE FUNCTION subjects_passed_IRH_2526(idEnrollment INT)
+RETURNS TABLE(subject TEXT, score INT, year INT)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    RETURN QUERY
+    SELECT subjects.name, scores.score, subjects.year
+    FROM scores
+    INNER JOIN subjects ON scores.subject_id = subjects.code
+    WHERE scores.enrollment_id = idEnrollment
+      AND scores.score >= 5;
+END;
+$$;
+--------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------
+subject_not_passed_IRH_2026
+--------------------------------------------------------------------------------------------
+CREATE OR REPLACE FUNCTION subjects_not_passed_IRH_2526(idEnrollment INT)
+RETURNS TABLE(subject TEXT, score INT, year INT)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    RETURN QUERY
+    SELECT subjects.name, scores.score, subjects.year
+    FROM scores
+    INNER JOIN subjects ON scores.subject_id = subjects.code
+    WHERE scores.enrollment_id = idEnrollment
+      AND scores.score < 5;
+END;
+$$;
+--------------------------------------------------------------------------------------------

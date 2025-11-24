@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vtinstitute>
+  <students>
+    <student>
+      <idcard>19828233</idcard>
+      <firstname>Jose</firstname>
+      <lastname>García Pérez</lastname>
+      <email>jrgarcia@iesmarenostrum.com</email>
+      <phone>616116611</phone>
+    </student>
+
+    <student>
+      <idcard>20150912</idcard>
+      <firstname>Ana</firstname>
+      <lastname>López Fernández</lastname>
+      <email>alopezf@iesmarenostrum.com</email>
+      <phone>622334455</phone>
+    </student>
+
+    <student>
+      <idcard>30541187</idcard>
+      <firstname>Miguel</firstname>
+      <lastname>Rodríguez Sánchez</lastname>
+      <email>mrodriguezs@iesmarenostrum.com</email>
+      <phone>633445566</phone>
+    </student>
+
+    <student>
+      <idcard>41002560</idcard>
+      <firstname>María</firstname>
+      <lastname>Martínez Gil</lastname>
+      <email>mmartinezg@iesmarenostrum.com</email>
+      <phone>644556677</phone>
+    </student>
+
+    <student>
+      <idcard>55289015</idcard>
+      <firstname>Javier</firstname>
+      <lastname>Hernández Ruiz</lastname>
+      <email>jhernandezr@iesmarenostrum.com</email>
+      <phone>655667788</phone>
+    </student>
+
+    <student>
+      <idcard>60713499</idcard>
+      <firstname>Elena</firstname>
+      <lastname>Díaz Castro</lastname>
+      <email>ediazc@iesmarenostrum.com</email>
+      <phone>666778899</phone>
+    </student>
+
+    <student>
+      <idcard>77356248</idcard>
+      <firstname>Carlos</firstname>
+      <lastname>Moreno Vázquez</lastname>
+      <email>cmorenov@iesmarenostrum.com</email>
+      <phone>677889900</phone>
+    </student>
+
+    <student>
+      <idcard>88192037</idcard>
+      <firstname>Laura</firstname>
+      <lastname>Álvarez Vega</lastname>
+      <email>lalvarezv@iesmarenostrum.com</email>
+      <phone>688990011</phone>
+    </student>
+
+    <student>
+      <idcard>90465172</idcard>
+      <firstname>David</firstname>
+      <lastname>Romero Sanz</lastname>
+      <email>dromeros@iesmarenostrum.com</email>
+      <phone>699001122</phone>
+    </student>
+
+    <student>
+      <idcard>01934856</idcard>
+      <firstname>Sofía</firstname>
+      <lastname>Torres Prieto</lastname>
+      <email>storresp@iesmarenostrum.com</email>
+      <phone>600112233</phone>
+    </student>
+    
+    <student>
+      <idcard>10293847</idcard>
+      <firstname>Pablo</firstname>
+      <lastname>Ruiz Cano</lastname>
+      <email>pruizc@iesmarenostrum.com</email>
+      <phone>611223344</phone>
+    </student>
+  </students>
+</vtinstitute>
