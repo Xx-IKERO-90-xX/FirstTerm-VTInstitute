@@ -61,7 +61,7 @@ public class Main {
                         // Get subjects of first year
                         List<Subject> subjectsFirstYear = subjectController.getFirstYearSubjects(parseInt(args[2]));
                         enrollmentController.enrollStudent(args[1], parseInt(args[2]));
-                        
+
                         Enrollment enrollment = enrollmentController.getLastStudentEnrollment(args[1]);
                         for (Subject subject : subjectsFirstYear) {
                             scoresController.addNewScores(enrollment.getCode(), subject.getCode(), 0);

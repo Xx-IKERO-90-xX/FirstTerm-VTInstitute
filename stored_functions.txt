@@ -34,3 +34,52 @@ BEGIN
 END;
 $$;
 --------------------------------------------------------------------------------------------
+
+
+Automatically this function limits to a student to enrolly only twice.
+------------------------------------------------------------------------------
+CREATE OR REPLACE FUNCTION limit_enrollments()
+RETURNS TRIGGER AS $$
+DECLARE
+    total INT;
+BEGIN
+    SELECT COUNT(*) INTO total
+    FROM enrollments
+    WHERE student = NEW.student;
+
+    IF total >= 2 THEN
+        RAISE EXCEPTION 'El estudiante % no puede tener más de 2 matrículas', NEW.student;
+    END IF;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_limit_enrollments
+BEFORE INSERT ON enrollments
+FOR EACH ROW EXECUTE FUNCTION limit_enrollments();
+
+-----------------------------------------------------------------------------------------------------------
+CREATE OR REPLACE FUNCTION limit_scores()
+RETURNS TRIGGER AS $$
+DECLARE
+    total INT;
+BEGIN
+    SELECT COUNT(*) INTO total
+    FROM scores
+    WHERE enrollment_id = NEW.enrollment_id;
+
+    IF total >= 10 THEN
+        RAISE EXCEPTION 'La matrícula % ya tiene el máximo de asignaturas permitidas', NEW.enrollment_id;
+    END IF;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_limit_scores
+BEFORE INSERT ON scores
+FOR EACH ROW EXECUTE FUNCTION limit_scores();
+
+
+

@@ -70,7 +70,7 @@ public class ScoresController {
     }
 
     // Function that adds new Scores to the database.
-    public void addNewScores(int idEnrollment, int subjectCode, int score) {
+    public void addNewScores(int idEnrollment, int subjectCode, int score) throws SQLException {
         String sql = "INSERT INTO scores (enrollment_id, subject_id, score) VALUES (?, ?, ?)";
 
         try (Connection conn = db.openConnection();
@@ -83,8 +83,11 @@ public class ScoresController {
             stmt.executeUpdate();
             System.out.println("Score added for enrollment " + idEnrollment + " and subject " + subjectCode);
         } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
+            if (e.getSQLState().equals("23505")) { // duplicate key
+                System.out.println("WARN: Score already exists. Ignoring...");
+                return;
+            }
+            throw e;
         }
     }
 }

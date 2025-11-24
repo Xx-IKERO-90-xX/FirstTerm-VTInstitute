@@ -8,8 +8,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import org.vtinstitute.models.Enrollment;
-
 public class EnrollmentController {
     private Database db = new Database();
 
@@ -63,7 +61,7 @@ public class EnrollmentController {
 
             stmt.executeUpdate();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 
