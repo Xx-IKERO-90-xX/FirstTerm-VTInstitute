@@ -83,20 +83,8 @@ public class ScoresController {
             stmt.executeUpdate();
             System.out.println("Score added for enrollment " + idEnrollment + " and subject " + subjectCode);
         } catch (SQLException e) {
-            // Códigos de error de duplicado (ejemplos comunes):
-            // 23505 para PostgreSQL/Oracle (Integrity Constraint Violation)
-            // 23000 para MySQL (Integrity Constraint Violation)
-
-            // Verifica si el error es de tipo duplicado de clave
-            if (e.getSQLState().startsWith("23")) {
-                // Si es un duplicado, NO hace nada (simplemente sale del método)
-                System.out.println("WARN: Record already exists for enrollment " + idEnrollment + ". Skipping.");
-                // Aquí termina la ejecución de la función y el bucle 'for' pasa al siguiente elemento.
-            } else {
-                // Si es cualquier otro error SQL, relanza la excepción
-                e.printStackTrace();
-                throw new RuntimeException("DB Error during INSERT", e);
-            }
+            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 }
