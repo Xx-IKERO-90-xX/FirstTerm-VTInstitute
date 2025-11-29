@@ -65,6 +65,32 @@ public class EnrollmentController {
         }
     }
 
+    // Gets an enrollment by a code.
+    public Enrollment getEnrollmentByCode(int code) {
+        String sql = "SELECT * FROM enrollments WHERE code = ?";
+        Enrollment enrollment = null;
+
+        try (Connection conn = db.openConnection()){
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setInt(1, code);
+
+            var rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                enrollment = new Enrollment(
+                        rs.getInt("code"),
+                        rs.getString("student"),
+                        rs.getInt("course"),
+                        rs.getInt("year")
+                );
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return enrollment;
+    }
+
     // Function that gets the last enrollment of a student.
     public Enrollment getLastStudentEnrollment(String idCard) {
         String sql = "SELECT * FROM enrollments WHERE student = ? ORDER BY year DESC LIMIT 1";

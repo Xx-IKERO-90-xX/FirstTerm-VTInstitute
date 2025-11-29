@@ -51,7 +51,6 @@ public class Main {
             }
 
             case "--enroll" -> {
-
                 if (args.length < 3) {
                     System.err.println("There are not enought arguments.");
                     return;
@@ -88,6 +87,16 @@ public class Main {
                     System.out.println(courseController.courseExists(parseInt(args[2])));
                     System.err.println("Some of records aren't exists in the Dabasase, review the data and try again.");
                 }
+            }
+            case "--qualify" -> {
+                if (args.length < 4) {
+                    System.err.println("There are not enought arguments.");
+                    return;
+                }
+                else {
+                    
+                }
+
             }
         }
     }
