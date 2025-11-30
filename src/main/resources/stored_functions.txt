@@ -82,4 +82,23 @@ BEFORE INSERT ON scores
 FOR EACH ROW EXECUTE FUNCTION limit_scores();
 
 
+----------------------------------------------------------------
+CREATE OR REPLACE FUNCTION public.getEnrollmentScoresIJRH(idenrollment integer)
+ RETURNS TABLE(subject text, score integer, year integer)
+ LANGUAGE plpgsql
+AS $function$
+BEGIN
+    RETURN QUERY
+    -- ¡CORRECCIÓN! Usamos ::TEXT para forzar la coincidencia de tipo.
+    SELECT subjects.name::TEXT, 
+           scores.score, 
+           subjects.year
+    FROM scores
+    INNER JOIN subjects ON scores.subject_id = subjects.code
+    WHERE scores.enrollment_id = idEnrollment;
+END;
+$function$
+
+
+
 

@@ -27,23 +27,4 @@ public class CourseController {
         return rs.next();
     }
 
-    // Function that updates scores.
-    public void  updateScore(int enrollmentId, int subjectId, int newScore) {
-        String sql = "UPDATE scores SET score = ? WHERE enrollment_id = ? AND subject_id = ?";
-
-        try (Connection conn = db.openConnection()) {
-            PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setInt(1, newScore);
-            stmt.setInt(2, enrollmentId);
-            stmt.setInt(3, subjectId);
-
-            int rows = stmt.executeUpdate();
-            if (rows == 0) {
-                throw new RuntimeException("Subject not found in this enrollment.");
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
 }

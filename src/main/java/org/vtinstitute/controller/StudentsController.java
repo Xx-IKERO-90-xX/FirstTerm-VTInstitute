@@ -33,6 +33,7 @@ import java.util.logging.Logger;
 
 public class StudentsController {
     private SAXParser saxParser = null;
+    private Database db = new Database();
 
     private SAXParser createSaxParser() {
         try {
@@ -98,8 +99,32 @@ public class StudentsController {
             Logger lgr = Logger.getLogger(StudentsController.class.getName());
             lgr.log(Level.SEVERE, ex.getMessage(), ex);
         }
-
         return handler.getStudents();
+    }
+
+    // Function that return a Student by a idCard.
+    public Student getStudent(String idCard) {
+        String sql = "SELECT * FROM students WHERE idcard = ?";
+        Student student = null;
+
+        try (Connection conn = db.openConnection()) {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, idCard);
+            var rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                student = new Student(
+                        rs.getString("idcard"),
+                        rs.getString("firstname"),
+                        rs.getString("lastname"),
+                        rs.getString("phone"),
+                        rs.getString("email")
+                );
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return student;
     }
 
     public void addStudentsXML() {

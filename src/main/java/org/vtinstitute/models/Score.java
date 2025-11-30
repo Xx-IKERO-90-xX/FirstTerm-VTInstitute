@@ -8,7 +8,7 @@ public class Score {
     private Integer score; // Usamos Integer para permitir valores NULL (calificación pendiente)
 
     // Constructor Vacío
-    public Score() {
+    public Score(int code, int enrollmentId, int score) {
     }
 
     // Constructor Completo

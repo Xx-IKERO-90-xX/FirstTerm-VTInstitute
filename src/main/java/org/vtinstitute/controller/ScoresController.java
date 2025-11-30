@@ -1,6 +1,7 @@
 package org.vtinstitute.controller;
 
 import org.vtinstitute.connection.Database;
+import org.vtinstitute.models.Score;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -40,7 +41,25 @@ public class ScoresController {
 
         return lista;
     }
-    
+
+    // Function that updates scores.
+    public void  updateScore(int enrollmentId, int subjectId, int newScore) {
+        String sql = "UPDATE scores SET score = ? WHERE enrollment_id = ? AND subject_id = ?";
+
+        try (Connection conn = db.openConnection()) {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setInt(1, newScore);
+            stmt.setInt(2, enrollmentId);
+            stmt.setInt(3, subjectId);
+
+            int rows = stmt.executeUpdate();
+            if (rows == 0) {
+                throw new RuntimeException("Subject not found in this enrollment.");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     // Function that give us every not passed subjects.
     public List<Map<String, Object>> getNotPassedSubjects(Integer idEnrollment) {
@@ -67,6 +86,30 @@ public class ScoresController {
         }
 
         return lista;
+    }
+
+    public List<Map<String, Object>> getScoresByEnrollment(int code) {
+        String sql = "SELECT * from getEnrollmentScoresIJRH(?)";
+        List<Map<String, Object>> scores = new ArrayList<>();
+
+        try (Connection conn = db.openConnection()) {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setInt(1, code);
+            var rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                Map<String, Object> result = new HashMap<>();
+                result.put("subject", rs.getString("subject"));
+                result.put("score", rs.getInt("score"));
+                result.put("year", rs.getInt("year"));
+
+                scores.add(result);
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return scores;
     }
 
     // Function that adds new Scores to the database.

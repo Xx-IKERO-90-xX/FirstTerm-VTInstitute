@@ -7,6 +7,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EnrollmentController {
     private Database db = new Database();
@@ -115,5 +117,32 @@ public class EnrollmentController {
         }
 
         return enrollment;    
+    }
+
+    // Function that get enrollments from a student.
+    public List<Enrollment> getStudentEnrollments(String idCard) {
+        List<Enrollment> enrollments = new ArrayList<>();
+
+        String sql = "SELECT * FROM enrollments WHERE student = ? ORDER BY year ASC";
+
+        try (Connection conn = db.openConnection()) {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, idCard);
+
+            var rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                enrollments.add(new Enrollment(
+                        rs.getInt("code"),
+                        rs.getString("student"),
+                        rs.getInt("course"),
+                        rs.getInt("year")
+                ));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return enrollments;
     }
 }

@@ -1,6 +1,7 @@
 package org.vtinstitute;
 
 import org.vtinstitute.controller.EnrollmentController;
+import org.vtinstitute.controller.PrintController;
 import org.vtinstitute.controller.ScoresController;
 import org.vtinstitute.controller.StudentsController;
 import org.vtinstitute.controller.CourseController;
@@ -9,7 +10,6 @@ import org.vtinstitute.models.Enrollment;
 import org.vtinstitute.models.Subject;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -22,12 +22,13 @@ public class Main {
     private static EnrollmentController enrollmentController = new EnrollmentController();
     private static SubjectController subjectController = new SubjectController();
     private static ScoresController scoresController = new ScoresController();
+    private static PrintController printController = new PrintController();
 
     public static void showDocumentation() {
         System.out.println("""
             VTInstitute Application
             =======================
-            --help : Show this documentation.
+            --help : Show this documentation. 
             --add students.xml : Add students from the specified XML file.
             --enroll : Matriculate a student to a course.
             --qualify : Qualifies students.
@@ -89,14 +90,42 @@ public class Main {
                 }
             }
             case "--qualify" -> {
-                if (args.length < 4) {
+                if (args.length < 3) {
                     System.err.println("There are not enought arguments.");
                     return;
                 }
                 else {
-                    
-                }
+                    String studentCard = args[1];
+                    int subjectId = parseInt(args[2]);
+                    int score = parseInt(args[3]);
 
+                    if (!studentsController.studentExists(studentCard)) {
+                        System.err.println("Student does not exists");
+                        return;
+                    }
+
+                    if (score < 0 || score > 10) {
+                        System.err.println("Score must be equal or mayor than 0 and equal or minor than 10");
+                        return;
+                    }
+
+                    Enrollment lastEnroll = enrollmentController.getLastStudentEnrollment(studentCard);
+
+                    if (lastEnroll == null) {
+                        System.err.println("This student has not enrollments.");
+                        return;
+                    }
+
+                    scoresController.updateScore(lastEnroll.getCode(), subjectId, score);
+                    System.out.println("Score updated successfully.");
+                }
+            }
+            case "--print" -> {
+                if (args.length < 2) {
+                    System.err.println("Usage: --print <idCard>");
+                    return;
+                }
+                printController.printExpedient(args[1]);
             }
         }
     }
