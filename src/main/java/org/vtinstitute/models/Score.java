@@ -1,41 +1,57 @@
 package org.vtinstitute.models;
 
-public class Score {
-    // Atributos
-    private int code; // PK (INTEGER - scores_code_seq)
-    private int enrollmentId; // FK
-    private int subjectId; // FK
-    private Integer score; // Usamos Integer para permitir valores NULL (calificación pendiente)
+import jakarta.persistence.*;
 
-    // Constructor Vacío
-    public Score() {
+@Entity
+@Table(name = "scores")
+public class Score {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "scores_id_gen")
+    @SequenceGenerator(name = "scores_id_gen", sequenceName = "scores_code_seq", allocationSize = 1)
+    @Column(name = "code", nullable = false)
+    private Integer id;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "enrollment_id", nullable = false)
+    private Enrollment enrollment;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "subject_id", nullable = false)
+    private Subject subject;
+
+    @Column(name = "score")
+    private Integer score;
+
+    public Integer getId() {
+        return id;
     }
 
-    // Constructor Completo
-    public Score(int code, int enrollmentId, int subjectId, Integer score) {
-        this.code = code;
-        this.enrollmentId = enrollmentId;
-        this.subjectId = subjectId;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Enrollment getEnrollment() {
+        return enrollment;
+    }
+
+    public void setEnrollment(Enrollment enrollment) {
+        this.enrollment = enrollment;
+    }
+
+    public Subject getSubject() {
+        return subject;
+    }
+
+    public void setSubject(Subject subject) {
+        this.subject = subject;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
         this.score = score;
     }
 
-    // Getters y Setters
-    public int getCode() { return code; }
-    public void setCode(int code) { this.code = code; }
-    public int getEnrollmentId() { return enrollmentId; }
-    public void setEnrollmentId(int enrollmentId) { this.enrollmentId = enrollmentId; }
-    public int getSubjectId() { return subjectId; }
-    public void setSubjectId(int subjectId) { this.subjectId = subjectId; }
-    public Integer getScore() { return score; }
-    public void setScore(Integer score) { this.score = score; }
-
-    @Override
-    public String toString() {
-        return "Score{" +
-                "code=" + code +
-                ", enrollmentId=" + enrollmentId +
-                ", subjectId=" + subjectId +
-                ", score=" + score +
-                '}';
-    }
 }

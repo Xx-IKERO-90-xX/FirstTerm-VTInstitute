@@ -1,46 +1,65 @@
 package org.vtinstitute.models;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "students")
 public class Student {
-    // Atributos
-    private String idCard; // PK (VARCHAR(8))
-    private String firstName; // NOT NULL
-    private String lastName; // NOT NULL
+    @Id
+    @SequenceGenerator(name = "students_id_gen", sequenceName = "scores_code_seq", allocationSize = 1)
+    @Column(name = "idcard", nullable = false, length = 8)
+    private String idcard;
+
+    @Column(name = "firstname", nullable = false, length = 50)
+    private String firstname;
+
+    @Column(name = "lastname", nullable = false, length = 100)
+    private String lastname;
+
+    @Column(name = "phone", length = 12)
     private String phone;
+
+    @Column(name = "email", length = 100)
     private String email;
 
-    // Constructor Vacío
-    public Student() {
+    public String getIdcard() {
+        return idcard;
     }
 
-    // Constructor Completo
-    public Student(String idCard, String firstName, String lastName, String phone, String email) {
-        this.idCard = idCard;
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public void setIdcard(String idcard) {
+        this.idcard = idcard;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    // Getters y Setters
-    public String getIdCard() { return idCard; }
-    public void setIdCard(String idCard) { this.idCard = idCard; }
-    public String getFirstName() { return firstName; }
-    public void setFirstName(String firstName) { this.firstName = firstName; }
-    public String getLastName() { return lastName; }
-    public void setLastName(String lastName) { this.lastName = lastName; }
-    public String getPhone() { return phone; }
-    public void setPhone(String phone) { this.phone = phone; }
-    public String getEmail() { return email; }
-    public void setEmail(String email) { this.email = email; }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "idCard='" + idCard + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
-                '}';
-    }
 }

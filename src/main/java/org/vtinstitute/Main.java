@@ -5,16 +5,18 @@ import org.vtinstitute.controller.ScoresController;
 import org.vtinstitute.controller.StudentsController;
 import org.vtinstitute.controller.CourseController;
 import org.vtinstitute.controller.SubjectController;
+
 import org.vtinstitute.models.Enrollment;
+import org.vtinstitute.models.Student;
+import org.vtinstitute.models.Subject;
+import org.vtinstitute.models.Score;
 import org.vtinstitute.models.Subject;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 import static java.lang.Integer.parseInt;
-
 
 public class Main {
     private static CourseController courseController = new CourseController();
@@ -63,7 +65,7 @@ public class Main {
 
                         Enrollment enrollment = enrollmentController.getLastStudentEnrollment(args[1]);
                         for (Subject subject : subjectsFirstYear) {
-                            scoresController.addNewScores(enrollment.getCode(), subject.getCode(), 0);
+                            scoresController.addNewScores(enrollment.getId(), subject.getId(), 0);
                         }
                     } else {
                         List<Subject> subjectsSecondYear = subjectController.getSecondYearSubjects(parseInt(args[2]));
@@ -71,14 +73,14 @@ public class Main {
 
                         Enrollment enrollment = enrollmentController.getLastStudentEnrollment(args[1]);
                         for (Subject subject : subjectsSecondYear) {
-                            scoresController.addNewScores(enrollment.getCode(), subject.getCode(), 0);
+                            scoresController.addNewScores(enrollment.getId(), subject.getId(), 0);
                         }
 
-                        List<Map<String, Object>> notPassedSubjects = scoresController.getNotPassedSubjects(enrollment.getCode());
+                        List<Map<String, Object>> notPassedSubjects = scoresController.getNotPassedSubjects(enrollment.getId());
                         for (Map<String, Object> subjectData : notPassedSubjects) {
                             int subjectCode = (int) subjectData.get("subject");
                             int score = (int) subjectData.get("score");
-                            scoresController.addNewScores(enrollment.getCode(), subjectCode, score);
+                            scoresController.addNewScores(enrollment.getId(), subjectCode, score);
                         }
                     }
                 }
@@ -94,7 +96,11 @@ public class Main {
                     return;
                 }
                 else {
-                    
+                    int enrollment = parseInt(args[1]);
+                    int subject = parseInt(args[2]);
+                    int score = parseInt(args[3]);
+
+                    scoresController.updateScore(enrollment, subject, score);
                 }
 
             }

@@ -16,7 +16,7 @@ public class ScoresController {
 
     // Function that give us every passed subjects.
     public List<Map<String, Object>> getPassedSubjects(Integer idEnrollment) {
-        String sql = "SELECT * FROM subjects_passed_IRH_2526(?)"; // Corregido el FROM
+        String sql = "SELECT * FROM subjects_passed_IRH_2526(?)";
         List<Map<String, Object>> lista = new ArrayList<>();
 
         try (Connection conn = db.openConnection();
@@ -44,7 +44,7 @@ public class ScoresController {
 
     // Function that give us every not passed subjects.
     public List<Map<String, Object>> getNotPassedSubjects(Integer idEnrollment) {
-        String sql = "SELECT * FROM subjects_passed_IRH_2526(?)"; // Corregido el FROM
+        String sql = "SELECT * FROM subjects_passed_IRH_2526(?)";
         List<Map<String, Object>> lista = new ArrayList<>();
 
         try (Connection conn = db.openConnection();
@@ -88,6 +88,25 @@ public class ScoresController {
                 return;
             }
             throw e;
+        }
+    }
+
+    // Function that updates scores.
+    public void updateScore(int enrollmentId, int subjectId, int newScore) {
+        String sql = "UPDATE scores SET score = ? WHERE enrollment_id = ? AND subject_id = ?";
+
+        try (Connection conn = db.openConnection()) {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setInt(1, newScore);
+            stmt.setInt(2, enrollmentId);
+            stmt.setInt(3, subjectId);
+
+            int rows = stmt.executeUpdate();
+            if (rows == 0) {
+                throw new RuntimeException("Subject not found in this enrollment.");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 }

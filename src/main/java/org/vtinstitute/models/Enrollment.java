@@ -1,41 +1,57 @@
 package org.vtinstitute.models;
 
-public class Enrollment {
-    // Atributos
-    private int code; // PK (INTEGER - inscriptions_code_seq)
-    private String studentId; // FK
-    private int courseId; // FK
-    private int year; // NOT NULL
+import jakarta.persistence.*;
 
-    // Constructor Vacío
-    public Enrollment() {
+@Entity
+@Table(name = "enrollments")
+public class Enrollment {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "enrollments_id_gen")
+    @SequenceGenerator(name = "enrollments_id_gen", sequenceName = "inscriptions_code_seq", allocationSize = 1)
+    @Column(name = "code", nullable = false)
+    private Integer id;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "student", nullable = false)
+    private Student student;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "course", nullable = false)
+    private Cours course;
+
+    @Column(name = "year", nullable = false)
+    private Integer year;
+
+    public Integer getId() {
+        return id;
     }
 
-    // Constructor Completo
-    public Enrollment(int code, String studentId, int courseId, int year) {
-        this.code = code;
-        this.studentId = studentId;
-        this.courseId = courseId;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
+    public Cours getCourse() {
+        return course;
+    }
+
+    public void setCourse(Cours course) {
+        this.course = course;
+    }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public void setYear(Integer year) {
         this.year = year;
     }
 
-    // Getters y Setters
-    public int getCode() { return code; }
-    public void setCode(int code) { this.code = code; }
-    public String getStudentId() { return studentId; }
-    public void setStudentId(String studentId) { this.studentId = studentId; }
-    public int getCourseId() { return courseId; }
-    public void setCourseId(int courseId) { this.courseId = courseId; }
-    public int getYear() { return year; }
-    public void setYear(int year) { this.year = year; }
-
-    @Override
-    public String toString() {
-        return "Enrollment{" +
-                "code=" + code +
-                ", studentId='" + studentId + '\'' +
-                ", courseId=" + courseId +
-                ", year=" + year +
-                '}';
-    }
 }

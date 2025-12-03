@@ -1,6 +1,5 @@
 package org.vtinstitute.controller;
 import org.vtinstitute.connection.Database;
-
 import org.vtinstitute.models.Subject;
 
 import java.util.List;
@@ -21,7 +20,7 @@ public class SubjectController {
 
                 while (rs.next()) {
                     Subject subject = new Subject();
-                    subject.setCode(rs.getInt("code"));
+                    subject.setId(rs.getInt("code"));
                     subject.setName(rs.getString("name"));
                     subject.setYear(rs.getInt("year"));
 

@@ -1,14 +1,12 @@
 package org.vtinstitute.handler;
 
+import org.vtinstitute.models.Student;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-
-import org.vtinstitute.models.Student;
 
 public class SAXHandler extends DefaultHandler {
     private List<Student> students = new ArrayList<>();
@@ -40,15 +38,15 @@ public class SAXHandler extends DefaultHandler {
         String content = new String(ch, start, length);
 
         if (bIdCard) {
-            student.setIdCard(content);
+            student.setIdcard(content);
             bIdCard = false;
         }
         if (bFirstName) {
-            student.setFirstName(content);
+            student.setFirstname(content);
             bFirstName = false;
         }
         if (bLastName) {
-            student.setLastName(content);
+            student.setLastname(content);
             bLastName = false;
         }
         if (bPhone) {

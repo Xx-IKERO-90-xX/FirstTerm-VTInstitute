@@ -5,8 +5,6 @@ import org.vtinstitute.handler.SAXHandler;
 import org.vtinstitute.models.Student;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-import org.xml.sax.SAXNotRecognizedException;
-import org.xml.sax.SAXNotSupportedException;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.ParserConfigurationException;
@@ -33,6 +31,8 @@ import java.util.logging.Logger;
 
 public class StudentsController {
     private SAXParser saxParser = null;
+    private String xmlFile = "src/main/resources/Students.xml";
+    private String xsdPath = "src/main/resources/Students.xsd";
 
     private SAXParser createSaxParser() {
         try {
@@ -54,14 +54,14 @@ public class StudentsController {
         try (Connection conn = new Database().openConnection()) {
             PreparedStatement stmt = conn.prepareStatement(sql);
 
-            stmt.setString(1, student.getIdCard());
-            stmt.setString(2, student.getFirstName());
-            stmt.setString(3, student.getLastName());
+            stmt.setString(1, student.getIdcard());
+            stmt.setString(2, student.getFirstname());
+            stmt.setString(3, student.getLastname());
             stmt.setString(4, student.getPhone());
             stmt.setString(5, student.getEmail());
 
             stmt.executeUpdate();
-            System.out.println("Student " + student.getFirstName() + " added.");
+            System.out.println("Student " + student.getFirstname() + " added.");
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException(e);
@@ -85,12 +85,10 @@ public class StudentsController {
 
     private List<Student> parseStundents() {
         var handler = new SAXHandler();
-        String fileName = "src/main/resources/Students.xml";
-        File xmlDocument = Paths.get(fileName).toFile();
+        File xmlDocument = Paths.get(xmlFile).toFile();
 
         try {
             SAXParser parser = createSaxParser();
-            assert parser != null;
             parser.parse(xmlDocument, handler);
 
         } catch (SAXException | IOException ex) {
@@ -103,8 +101,7 @@ public class StudentsController {
     }
 
     public void addStudentsXML() {
-        var xsdFile = new File("src/main/resources/Students.xsd");
-        String xmlFile = "src/main/resources/Students.xml";
+        var xsdFile = new File(xsdPath);
         List<Student> students = new ArrayList<>();
 
         try {
