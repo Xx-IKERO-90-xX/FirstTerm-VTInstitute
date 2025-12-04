@@ -1,15 +1,7 @@
 package org.vtinstitute;
 
-import org.vtinstitute.controller.EnrollmentController;
-import org.vtinstitute.controller.ScoresController;
-import org.vtinstitute.controller.StudentsController;
-import org.vtinstitute.controller.CourseController;
-import org.vtinstitute.controller.SubjectController;
-
+import org.vtinstitute.controller.*;
 import org.vtinstitute.models.Enrollment;
-import org.vtinstitute.models.Student;
-import org.vtinstitute.models.Subject;
-import org.vtinstitute.models.Score;
 import org.vtinstitute.models.Subject;
 
 import java.sql.SQLException;
@@ -18,32 +10,34 @@ import java.util.Map;
 
 import static java.lang.Integer.parseInt;
 
+
 public class Main {
     private static CourseController courseController = new CourseController();
     private static StudentsController studentsController = new StudentsController();
     private static EnrollmentController enrollmentController = new EnrollmentController();
     private static SubjectController subjectController = new SubjectController();
     private static ScoresController scoresController = new ScoresController();
+    private static PrintController printController = new  PrintController();
 
     public static void showDocumentation() {
         System.out.println("""
             VTInstitute Application
             =======================
-            --help : Show this documentation.
-            --add students.xml : Add students from the specified XML file.
-            --enroll : Matriculate a student to a course.
-            --qualify : Qualifies students.
-            --print : Shows the expedient from a student.
+            --help -h : Show this documentation.
+            --add -a : Add students from the specified XML file.
+            --enroll -e [StudentCard] [Course] [year]: Matriculate a student to a course.
+            --qualify -q [enrollemntId] [subjectId] [mark] : Qualifies a subject for a enrollment.
+            --print -p [StudentCard] : Shows the expedient from a student.
             =======================
         """);
     }
     public static void main(String[] args) throws SQLException {
 
         switch (args[0]){
-            case "--help" -> {
+            case "--help", "-h" -> {
                 showDocumentation();
             }
-            case "--add" -> {
+            case "--add", "-a" -> {
                 if (args.length > 1) {
                     System.err.println("Too many arguments.");
                     return;
@@ -52,30 +46,45 @@ public class Main {
                 break;
             }
 
-            case "--enroll" -> {
+            case "--enroll", "-e" -> {
                 if (args.length < 3) {
                     System.err.println("There are not enought arguments.");
                     return;
                 }
-                if (studentsController.studentExists(args[1]) && courseController.courseExists(Integer.parseInt(args[2]))){
-                    if (enrollmentController.isFirstEnrollment(args[1])) {
-                        // Get subjects of first year
-                        List<Subject> subjectsFirstYear = subjectController.getFirstYearSubjects(parseInt(args[2]));
-                        enrollmentController.enrollStudent(args[1], parseInt(args[2]));
 
-                        Enrollment enrollment = enrollmentController.getLastStudentEnrollment(args[1]);
+                String studentCard = args[1];
+                int courseId = parseInt(args[2]);
+
+                if (studentsController.studentExists(studentCard) && courseController.courseExists(courseId)){
+                    if (enrollmentController.isFirstEnrollment(studentCard)) {
+                        // Get subjects of first year
+                        List<Subject> subjectsFirstYear = subjectController.getCourseSubject(courseId, 1);
+
+                        // Create the enrollment
+                        enrollmentController.enrollStudent(studentCard, courseId);
+
+                        // Adds Subject initial scores for the new enrollment.
+                        Enrollment enrollment = enrollmentController.getLastStudentEnrollment(studentCard);
+
                         for (Subject subject : subjectsFirstYear) {
                             scoresController.addNewScores(enrollment.getId(), subject.getId(), 0);
                         }
                     } else {
-                        List<Subject> subjectsSecondYear = subjectController.getSecondYearSubjects(parseInt(args[2]));
-                        enrollmentController.enrollStudent(args[1], parseInt(args[2]));
+                        // Gets second year subjects from a course.
+                        List<Subject> subjectsSecondYear = subjectController.getCourseSubject(courseId, 2);
 
-                        Enrollment enrollment = enrollmentController.getLastStudentEnrollment(args[1]);
+                        // Creates the second enrollment.
+                        enrollmentController.enrollStudent(studentCard, courseId);
+
+                        // Get the new enrollment created.
+                        Enrollment enrollment = enrollmentController.getLastStudentEnrollment(studentCard);
+
+                        // Adds Subject initial scores for the second year.
                         for (Subject subject : subjectsSecondYear) {
                             scoresController.addNewScores(enrollment.getId(), subject.getId(), 0);
                         }
 
+                        // Get not passed students
                         List<Map<String, Object>> notPassedSubjects = scoresController.getNotPassedSubjects(enrollment.getId());
                         for (Map<String, Object> subjectData : notPassedSubjects) {
                             int subjectCode = (int) subjectData.get("subject");
@@ -83,26 +92,35 @@ public class Main {
                             scoresController.addNewScores(enrollment.getId(), subjectCode, score);
                         }
                     }
-                }
-                else {
-                    System.out.println(studentsController.studentExists(args[1]));
-                    System.out.println(courseController.courseExists(parseInt(args[2])));
-                    System.err.println("Some of records aren't exists in the Dabasase, review the data and try again.");
+                } else {
+                    System.err.println("Some of records aren't exists in the Database.");
                 }
             }
-            case "--qualify" -> {
+            case "--qualify", "-q" -> {
                 if (args.length < 4) {
                     System.err.println("There are not enought arguments.");
                     return;
-                }
-                else {
+                } else {
                     int enrollment = parseInt(args[1]);
                     int subject = parseInt(args[2]);
                     int score = parseInt(args[3]);
 
+                    if (score < 0 || score > 10) {
+                        System.err.println("Score must be between 0 and 10.");
+                        return;
+                    }
+
                     scoresController.updateScore(enrollment, subject, score);
                 }
+            }
 
+            case "--print", "-p" -> {
+                if (args.length < 2 ) {
+                    System.err.println("There are not enough arguments.");
+                    return;
+                } else {
+                    printController.printExpedient(args[1]);
+                }
             }
         }
     }
