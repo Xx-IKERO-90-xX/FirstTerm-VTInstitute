@@ -26,8 +26,8 @@ public class Main {
             --help -h : Show this documentation.
             --add -a : Add students from the specified XML file.
             --enroll -e [StudentCard] [Course] [year]: Matriculate a student to a course.
-            --qualify -q [enrollemntId] [subjectId] [mark] : Qualifies a subject for a enrollment.
-            --print -p [StudentCard] : Shows the expedient from a student.
+            --qualify -q [enrollemntId] [subjectId] [mark]: Qualifies a subject for a enrollment.
+            --print -p [StudentCard]: Shows the expedient from a student.
             =======================
         """);
     }

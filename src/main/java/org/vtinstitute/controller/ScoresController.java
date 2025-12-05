@@ -2,6 +2,7 @@ package org.vtinstitute.controller;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.NativeQuery;
 import org.vtinstitute.connection.Database;
 import org.vtinstitute.models.Enrollment;
 import org.vtinstitute.models.Score;
@@ -25,82 +26,87 @@ public class ScoresController {
 
     // Function that give us every passed subjects.
     public List<Map<String, Object>> getPassedSubjects(Integer idEnrollment) {
-        String sql = "SELECT * FROM subjects_passed_IRH_2526(?)";
-        List<Map<String, Object>> lista = new ArrayList<>();
 
-        try (Connection conn = db.openConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
+        try (Session session = HibernateUtils.getSessionFactory().openSession()) {
 
-            stmt.setInt(1, idEnrollment);
-            ResultSet rs = stmt.executeQuery();
+            String sql = "SELECT * FROM subjects_passed_IRH_2526(:idEnr)";
 
-            while (rs.next()) {
-                Map<String, Object> result = new HashMap<>();
-                result.put("subject", rs.getString("subject"));
-                result.put("score", rs.getInt("score"));
-                result.put("year", rs.getInt("year"));
+            NativeQuery<Object[]> query = session.createNativeQuery(sql);
+            query.setParameter("idEnr", idEnrollment);
 
-                lista.add(result);
+            List<Object[]> rows = query.getResultList();
+
+            List<Map<String, Object>> resultList = new ArrayList<>();
+
+            for (Object[] row : rows) {
+                Map<String, Object> map = new HashMap<>();
+
+                map.put("subject", row[0]);
+                map.put("score",   row[1]);
+                map.put("year",    row[2]);
+
+                resultList.add(map);
             }
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+            return resultList;
         }
-
-        return lista;
     }
+
 
     // Function that give us every not passed subjects.
     public List<Map<String, Object>> getNotPassedSubjects(Integer idEnrollment) {
-        String sql = "SELECT * FROM subjects_passed_IRH_2526(?)"; // Corregido el FROM
-        List<Map<String, Object>> lista = new ArrayList<>();
 
-        try (Connection conn = db.openConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
+        String sql = "SELECT * FROM subjects_not_passed_IRH_2526(:idEnr)";
 
-            stmt.setInt(1, idEnrollment);
-            ResultSet rs = stmt.executeQuery();
+        try (Session session = HibernateUtils.getSessionFactory().openSession()) {
 
-            while (rs.next()) {
-                Map<String, Object> result = new HashMap<>();
-                result.put("subject", rs.getString("subject"));
-                result.put("score", rs.getInt("score"));
-                result.put("year", rs.getInt("year"));
+            NativeQuery<Object[]> query = session.createNativeQuery(sql);
+            query.setParameter("idEnr", idEnrollment);
 
-                lista.add(result);
+            List<Object[]> rows = query.getResultList();
+            List<Map<String, Object>> resultList = new ArrayList<>();
+
+            for (Object[] row : rows) {
+                Map<String, Object> map = new HashMap<>();
+
+                map.put("subject", row[0]);
+                map.put("score",   row[1]);
+                map.put("year",    row[2]);
+
+                resultList.add(map);
             }
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+            return resultList;
         }
-
-        return lista;
     }
 
     // Function that give us every not passed subjects.
-    public List<Map<String, Object>> getScoresByEnrollment(int code) {
-        String sql = "SELECT * from getEnrollmentScoresIJRH(?)";
-        List<Map<String, Object>> scores = new ArrayList<>();
+    public List<Map<String, Object>> getScoresByEnrollment(int enrollmentId) {
 
-        try (Connection conn = db.openConnection()) {
-            PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setInt(1, code);
-            var rs = stmt.executeQuery();
+        String sql = "SELECT * FROM getEnrollmentScoresIJRH(:id)";
 
-            while (rs.next()) {
-                Map<String, Object> result = new HashMap<>();
-                result.put("subject", rs.getString("subject"));
-                result.put("score", rs.getInt("score"));
-                result.put("year", rs.getInt("year"));
+        try (Session session = HibernateUtils.getSessionFactory().openSession()) {
 
-                scores.add(result);
+            NativeQuery<Object[]> query = session.createNativeQuery(sql);
+            query.setParameter("id", enrollmentId);
+
+            List<Object[]> rows = query.getResultList();
+            List<Map<String, Object>> resultList = new ArrayList<>();
+
+            for (Object[] row : rows) {
+                Map<String, Object> map = new HashMap<>();
+
+                map.put("subject", row[0]);
+                map.put("score",   row[1]);
+                map.put("year",    row[2]);
+
+                resultList.add(map);
             }
 
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+            return resultList;
         }
-        return scores;
     }
+
 
     // Function that adds new Scores to the database.
     public void addNewScores(int idEnrollment, int subjectCode, int mark) {
