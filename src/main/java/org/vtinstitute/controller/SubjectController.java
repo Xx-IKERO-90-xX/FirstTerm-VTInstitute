@@ -3,24 +3,27 @@ import org.hibernate.Session;
 import org.vtinstitute.connection.Database;
 import org.vtinstitute.models.Subject;
 import org.vtinstitute.tools.HibernateUtils;
+import org.vtinstitute.controller.LogsController;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SubjectController {
-    private Database db = new Database();
+    private LogsController logsController = new LogsController();
 
     // Function that gives a Subject by code from Database.
     public Subject getSubjectByCode(int code) {
         Session session = HibernateUtils.getSession();
         String hql = "FROM Subject WHERE id = :code";
         try {
+            logsController.logInfo("Getting subject by code " + code);
             return session.createQuery(hql, Subject.class)
                     .setParameter("code", code)
                     .uniqueResult();
 
         } catch (Exception e) {
-            System.err.println(e.getMessage());
+            logsController.logError(e.getMessage());
+            System.err.println("There was an error trying to get subject by code " + code);
             return null;
         } finally {
             session.close();
@@ -32,6 +35,7 @@ public class SubjectController {
         Session session = HibernateUtils.getSession();
         String sql = null;
         try {
+            logsController.logInfo("Getting course subjects by course " + course);
             if (year == 1) {
                 sql = """
                     SELECT s.code, s.name, s.year
@@ -62,10 +66,13 @@ public class SubjectController {
                 subjects.add(subject);
             }
             return subjects;
+        } catch (Exception e) {
+            logsController.logError(e.getMessage());
+            System.err.println("There was an error getting course subjects by course " + course);
 
+            return null;
         } finally {
             session.close();
         }
-
     }
 }

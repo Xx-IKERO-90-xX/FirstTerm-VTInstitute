@@ -6,6 +6,7 @@ import org.hibernate.query.Query;
 import org.vtinstitute.connection.Database;
 import org.vtinstitute.models.Cours;
 import org.vtinstitute.models.Enrollment;
+import org.vtinstitute.controller.LogsController;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -20,11 +21,13 @@ public class EnrollmentController {
     private Database db = new Database();
     private StudentsController studentsController = new StudentsController();
     private CourseController courseController = new CourseController();
+    private LogsController logsController = new LogsController();
 
     // Function that tests if the student is enrolled to a Course.
     public boolean isStudentEnrolled(String idCard) {
         Session session = HibernateUtils.getSession();
         try {
+            logsController.logInfo("Checking if student " + idCard + " is enrolled");
             String hql = "FROM Enrollment e WHERE e.student = :idCard";
             Query<Enrollment> query = session.createQuery(hql, Enrollment.class);
             query.setParameter("idCard", idCard);
@@ -40,6 +43,7 @@ public class EnrollmentController {
     public boolean isFirstEnrollment(String idCard) {
         Session session = HibernateUtils.getSession();
         try {
+            logsController.logInfo("Checking if student " + idCard + " is enrolled by the first time");
             Long count = session.createQuery(
                     "SELECT COUNT(e) FROM Enrollment e WHERE e.student.idcard = :idCard",
                     Long.class
@@ -57,6 +61,7 @@ public class EnrollmentController {
         Transaction tx = null;
 
         try (Session session = HibernateUtils.getSession()) {
+            logsController.logInfo("Enrolling student " + idCard + " to course " + course);
             tx = session.beginTransaction();
 
             Student student = studentsController.getStudent(idCard);
@@ -71,7 +76,8 @@ public class EnrollmentController {
 
         } catch (Exception e) {
             if (tx != null) tx.rollback();
-            throw new RuntimeException("Error rolling student.", e);
+            logsController.logError(e.getMessage());
+            System.err.println("Failed to enroll student " + idCard + " to course " + course);
         }
     }
 
@@ -80,6 +86,7 @@ public class EnrollmentController {
         Session session = HibernateUtils.getSession();
         Enrollment enrollment = null;
         try {
+            logsController.logInfo("Getting enrollment by code " + code);
             String hql = "FROM Enrollment e WHERE e.id = :code";
             enrollment = session.createQuery(hql, Enrollment.class)
                     .setParameter("code", code)
@@ -98,6 +105,7 @@ public class EnrollmentController {
         String hql = "FROM Enrollment e WHERE e.student.idcard = :student ORDER BY e.year DESC";
 
         try {
+            logsController.logInfo("Getting last student enrollment by code " + idCard);
             return session.createQuery(hql, Enrollment.class)
                     .setParameter("student", idCard)
                     .setMaxResults(1)
@@ -111,6 +119,7 @@ public class EnrollmentController {
     public List<Enrollment> getStudentEnrollments(String idCard) {
         Session session = HibernateUtils.getSession();
         try {
+            logsController.logInfo("Getting student enrollment by code " + idCard);
             String hql = "FROM Enrollment e WHERE e.student.idcard = :idCard ORDER BY e.year ASC";
             return session.createQuery(hql, Enrollment.class)
                     .setParameter("idCard", idCard)

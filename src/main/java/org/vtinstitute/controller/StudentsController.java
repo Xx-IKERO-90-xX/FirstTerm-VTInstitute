@@ -11,6 +11,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXNotRecognizedException;
 import org.xml.sax.SAXNotSupportedException;
+import org.vtinstitute.controller.LogsController;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.ParserConfigurationException;
@@ -35,16 +36,19 @@ public class StudentsController {
     private SAXParser saxParser = null;
     private String xmlPath = "src/main/resources/Students.xml";
     private String xsdPath = "src/main/resources/Students.xsd";
+    private LogsController logsController = new LogsController();
 
+    // Function that creates the SAX parser.
     private SAXParser createSaxParser() {
         try {
+            logsController.logInfo("Creating SAXParser");
+
             SAXParserFactory factory = SAXParserFactory.newInstance();
             factory.setNamespaceAware(true);
             return factory.newSAXParser();
         } catch (ParserConfigurationException | SAXException ex) {
-            Logger lgr = Logger.getLogger(StudentsController.class.getName());
-            lgr.log(Level.SEVERE, ex.getMessage(), ex);
-
+            logsController.logError(ex.getMessage());
+            System.err.println("There was an error creating SAXParser");
             return saxParser;
         }
     }
@@ -54,25 +58,30 @@ public class StudentsController {
         Transaction tx = null;
 
         try (Session session = HibernateUtils.getSessionFactory().openSession() ) {
+            logsController.logInfo("Adding student " + student.getIdcard() + " to DB");
             tx = session.beginTransaction();
             session.persist(student);
             tx.commit();
-
-            System.out.println("Student " + student + " added.");
         } catch (Exception e) {
             if (tx != null) tx.rollback();
-            throw new RuntimeException("Error saving student.", e);
+            logsController.logError(e.getMessage());
+            System.err.println("There was an error adding student " + student.getIdcard() + " to DB");
         }
     }
 
     // Function that checks if a Student exists in the DB.
     public boolean studentExists(String idCard) {
         try (Session session = HibernateUtils.getSessionFactory().openSession()) {
+            logsController.logInfo("Checking if student " + idCard + " exists");
             return session.createQuery(
                     "FROM Student s WHERE s.idcard = :idcard", Student.class)
                     .setParameter("idcard", idCard)
                     .uniqueResultOptional()
                     .isPresent();
+        } catch (Exception e) {
+            logsController.logError(e.getMessage());
+            System.err.println("There was an error checking student " + idCard + " exists");
+            return false;
         }
     }
 
@@ -85,19 +94,18 @@ public class StudentsController {
         }
 
         try {
+            logsController.logInfo("Parsing XML");
             SAXParser parser = createSaxParser();
 
             if (parser == null) {
                 throw new RuntimeException("ERROR: SAXParser could not be created");
             }
-
             parser.parse(xmlDocument, handler);
 
         } catch (SAXException | IOException ex) {
-            Logger lgr = Logger.getLogger(StudentsController.class.getName());
-            lgr.log(Level.SEVERE, ex.getMessage(), ex);
+            logsController.logError(ex.getMessage());
+            System.err.println("There was an error parsing XML");
         }
-
         return handler.getStudents();
     }
 
@@ -107,6 +115,7 @@ public class StudentsController {
         List<Student> students = new ArrayList<>();
 
         try {
+            logsController.logInfo("Adding students to XML");
             Path xmlPathFile = Paths.get(xmlPath);
             Reader reader = Files.newBufferedReader(xmlPathFile);
 
@@ -124,8 +133,8 @@ public class StudentsController {
 
             students = parseStundents();
         } catch (Exception ex) {
+            logsController.logError(ex.getMessage());
             System.err.println("ERROR: XML NOT VALID.");
-            ex.printStackTrace();
             students = new ArrayList<>();
         }
 
@@ -145,10 +154,15 @@ public class StudentsController {
     public Student getStudent(String idCard) {
         Session session = HibernateUtils.getSession();
         try {
+            logsController.logInfo("Getting student " + idCard);
             String hql = "FROM Student s WHERE s.idcard = :idcard";
             return session.createQuery(hql, Student.class)
                     .setParameter("idcard", idCard)
                     .getSingleResult();
+        }catch (Exception ex) {
+            logsController.logError(ex.getMessage());
+            System.err.println("There was an error getting student " + idCard);
+            return null;
         } finally {
             session.close();
         }

@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
+
     <Appenders>
-        <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss} %-5level %logger{36} - %msg%n"/>
-        </Console>
+        <RollingFile name="DailyLog"
+                     fileName="src/main/logs/log-current.log"
+                     filePattern="src/main/logs/log-%d{dd-MM-yyyy}.log"
+                     append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %c - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="ErrorLog"
+                     fileName="src/main/logs/errors-current.log"
+                     filePattern="src/main/logs/errors-%d{dd-MM-yyyy}.log"
+                     append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %c - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <!-- Solo ERROR -->
+            <Filters>
+                <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </RollingFile>
+
     </Appenders>
-
     <Loggers>
-        <!-- Hibernate -->
-        <Logger name="org.hibernate" level="ERROR" additivity="false">
-            <AppenderRef ref="Console"/>
-        </Logger>
-
-        <!-- Opcional: jboss logging -->
-        <Logger name="org.jboss.logging" level="ERROR" additivity="false">
-            <AppenderRef ref="Console"/>
-        </Logger>
-
-        <!-- Root logger para tu app -->
-        <Root level="INFO">
-            <AppenderRef ref="Console"/>
+        <Root level="info">
+            <AppenderRef ref="DailyLog"/>
+            <AppenderRef ref="ErrorLog"/>
         </Root>
     </Loggers>
-</Configuration>
 
+</Configuration>
