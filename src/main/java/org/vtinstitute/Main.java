@@ -26,8 +26,10 @@ public class Main {
             --help -h : Show this documentation.
             --add -a : Add students from the specified XML file.
             --enroll -e [StudentCard] [Course] [year]: Matriculate a student to a course.
-            --qualify -q [enrollemntId] [subjectId] [mark]: Qualifies a subject for a enrollment.
-            --print -p [StudentCard]: Shows the expedient from a student.
+            --qualify -q [enrollemntId] [subjectId] [0-10]: Qualifies a subject for a enrollment.
+            --print -p [StudentCard] --options : Shows the expedient from a student, options are optionals and the command without options prints only by terminal.
+                Options: 
+                    -txt: Exports an expediento to a TXT file in the route /exports.
             =======================
         """);
     }
@@ -99,6 +101,7 @@ public class Main {
             case "--qualify", "-q" -> {
                 if (args.length < 4) {
                     System.err.println("There are not enought arguments.");
+                    System.out.println("Usage: --qualify [enrollmentId] [subjectId] [0-10]");
                     return;
                 } else {
                     int enrollment = parseInt(args[1]);
@@ -118,8 +121,12 @@ public class Main {
                 if (args.length < 2 ) {
                     System.err.println("There are not enough arguments.");
                     return;
-                } else {
+                } else if (args.length == 3 && args[2].equals("-txt")) {
+                    printController.printExpedientTXT(args[1]);
+                } else if (args.length == 2) {
                     printController.printExpedient(args[1]);
+                } else {
+                    System.err.println("There are not enough arguments.");
                 }
             }
         }

@@ -18,7 +18,6 @@ import org.vtinstitute.models.Student;
 import org.vtinstitute.tools.HibernateUtils;
 
 public class EnrollmentController {
-    private Database db = new Database();
     private StudentsController studentsController = new StudentsController();
     private CourseController courseController = new CourseController();
     private LogsController logsController = new LogsController();
