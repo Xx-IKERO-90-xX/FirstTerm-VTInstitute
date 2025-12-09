@@ -27,7 +27,6 @@ import java.util.List;
 
 public class StudentsController {
     private SAXParser saxParser = null;
-    private String xmlPath = "src/main/resources/Students.xml";
     private String xsdPath = "src/main/resources/Students.xsd";
     private LogsController logsController = new LogsController();
 
@@ -57,8 +56,7 @@ public class StudentsController {
             tx.commit();
         } catch (Exception e) {
             if (tx != null) tx.rollback();
-            logsController.logError(e.getMessage());
-            System.err.println("There was an error adding student " + student.getIdcard() + " to DB");
+            System.out.println("Student " + student.getIdcard() + " repeated.");
         }
     }
 
@@ -78,7 +76,7 @@ public class StudentsController {
         }
     }
 
-    private List<Student> parseStundents() {
+    private List<Student> parseStundents(String xmlPath) {
         var handler = new SAXHandler();
         File xmlDocument = Paths.get(xmlPath).toFile();
 
@@ -103,10 +101,10 @@ public class StudentsController {
     }
 
 
-    public void addStudentsXML() {
+    public void addStudentsXML(String xmlName) {
         var xsdFile = new File(xsdPath);
         List<Student> students = new ArrayList<>();
-
+        String xmlPath = "inputs/" + xmlName;
         try {
             logsController.logInfo("Adding students to XML");
             Path xmlPathFile = Paths.get(xmlPath);
@@ -124,7 +122,7 @@ public class StudentsController {
 
             System.out.println("The document was validated OK");
 
-            students = parseStundents();
+            students = parseStundents(xmlPath);
         } catch (Exception ex) {
             logsController.logError(ex.getMessage());
             System.err.println("ERROR: XML NOT VALID.");
@@ -152,7 +150,7 @@ public class StudentsController {
             return session.createQuery(hql, Student.class)
                     .setParameter("idcard", idCard)
                     .getSingleResult();
-        }catch (Exception ex) {
+        } catch (Exception ex) {
             logsController.logError(ex.getMessage());
             System.err.println("There was an error getting student " + idCard);
             return null;

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vtinstitute>
+  <students>
+    <student idcard="19828233">
+      <firstname>Jose</firstname>
+      <lastname>García Pérez</lastname>
+      <email>jrgarcia@iesmarenostrum.com</email>
+      <phone>616116611</phone>
+    </student>
+
+    <student idcard="20150912">
+      <firstname>Ana</firstname>
+      <lastname>López Fernández</lastname>
+      <email>alopezf@iesmarenostrum.com</email>
+      <phone>622334455</phone>
+    </student>
+
+    <student idcard="30541187">
+      <firstname>Miguel</firstname>
+      <lastname>Rodríguez Sánchez</lastname>
+      <email>mrodriguezs@iesmarenostrum.com</email>
+      <phone>633445566</phone>
+    </student>
+
+    <student idcard="41002560">
+      <firstname>María</firstname>
+      <lastname>Martínez Gil</lastname>
+      <email>mmartinezg@iesmarenostrum.com</email>
+      <phone>644556677</phone>
+    </student>
+  </students>
+</vtinstitute>

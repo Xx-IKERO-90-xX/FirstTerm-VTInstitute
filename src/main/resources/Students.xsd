@@ -12,12 +12,12 @@
                             <xs:element name="student" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="idcard" type="idcardType"/>
                                         <xs:element name="firstname" type="nameType"/>
                                         <xs:element name="lastname" type="lastnameType"/>
                                         <xs:element name="email" type="emailType"/>
                                         <xs:element name="phone" type="phoneType"/>
                                     </xs:sequence>
+                                    <xs:attribute name="idcard" type="idcardType" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>

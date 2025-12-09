@@ -1,0 +1,9 @@
+2025-12-09 18:35:49 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.3.2.2: No está permitido que el atributo 'idard' aparezca en el elemento 'student'.
+2025-12-09 19:06:39 ERROR org.vtinstitute.controller.LogsController - could not execute statement [ERROR: duplicate key value violates unique constraint "students_pkey"
+  Detail: Key (idcard)=(19828233) already exists.] [insert into students (email,firstname,lastname,phone,idcard) values (?,?,?,?,?)]
+2025-12-09 19:06:39 ERROR org.vtinstitute.controller.LogsController - could not execute statement [ERROR: duplicate key value violates unique constraint "students_pkey"
+  Detail: Key (idcard)=(20150912) already exists.] [insert into students (email,firstname,lastname,phone,idcard) values (?,?,?,?,?)]
+2025-12-09 19:06:39 ERROR org.vtinstitute.controller.LogsController - could not execute statement [ERROR: duplicate key value violates unique constraint "students_pkey"
+  Detail: Key (idcard)=(30541187) already exists.] [insert into students (email,firstname,lastname,phone,idcard) values (?,?,?,?,?)]
+2025-12-09 19:06:40 ERROR org.vtinstitute.controller.LogsController - could not execute statement [ERROR: duplicate key value violates unique constraint "students_pkey"
+  Detail: Key (idcard)=(41002560) already exists.] [insert into students (email,firstname,lastname,phone,idcard) values (?,?,?,?,?)]

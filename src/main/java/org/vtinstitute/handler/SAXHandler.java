@@ -23,9 +23,10 @@ public class SAXHandler extends DefaultHandler {
 
         if ("student".equals(qName)) {
             student = new Student();
+            String idCard = atts.getValue("idcard");
+            student.setIdcard(idCard);
         }
         switch (qName) {
-            case "idcard" -> bIdCard = true;
             case "firstname" -> bFirstName = true;
             case "lastname" -> bLastName = true;
             case "phone" -> bPhone = true;

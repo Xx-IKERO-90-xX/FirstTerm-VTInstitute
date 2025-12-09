@@ -10,7 +10,6 @@ import java.util.Map;
 
 import static java.lang.Integer.parseInt;
 
-
 public class Main {
     private static CourseController courseController = new CourseController();
     private static StudentsController studentsController = new StudentsController();
@@ -24,10 +23,10 @@ public class Main {
             VTInstitute Application
             =======================
             --help -h : Show this documentation.
-            --add -a : Add students from the specified XML file.
-            --enroll -e [StudentCard] [Course] [year]: Matriculate a student to a course.
-            --qualify -q [enrollemntId] [subjectId] [0-10]: Qualifies a subject for a enrollment.
-            --print -p [StudentCard] --options : Shows the expedient from a student, options are optionals and the command without options prints only by terminal.
+            --add -a {file.xml} : Add students from the specified XML file.
+            --enroll -e {StudentCard} {CourseId} {year}: Matriculate a student to a course.
+            --qualify -q {enrollemntId} {subjectId} {0-10}: Qualifies a subject for a enrollment.
+            --print -p {StudentCard} --options : Shows the expedient from a student, options are optionals and the command without options prints only by terminal.
                 Options: 
                     -txt: Exports an expedients to a TXT file in the route /exports.
             =======================
@@ -40,11 +39,19 @@ public class Main {
                 showDocumentation();
             }
             case "--add", "-a" -> {
-                if (args.length > 1) {
+                if (args.length > 2) {
                     System.err.println("Too many arguments.");
                     return;
                 }
-                studentsController.addStudentsXML();
+                if (args.length < 2) {
+                    System.err.println("There are not enough arguments.");
+                    System.out.println("Usage: --add {file.xml}");
+                    return;
+                }
+
+                String xmlFile = args[1];
+
+                studentsController.addStudentsXML(xmlFile);
             }
 
             case "--enroll", "-e" -> {
