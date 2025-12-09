@@ -5,7 +5,6 @@ import org.vtinstitute.models.Cours;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import org.vtinstitute.connection.Database;
 import org.vtinstitute.tools.HibernateUtils;
 import org.vtinstitute.controller.LogsController;
 

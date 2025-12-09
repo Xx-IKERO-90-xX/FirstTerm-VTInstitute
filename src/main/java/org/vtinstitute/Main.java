@@ -29,7 +29,7 @@ public class Main {
             --qualify -q [enrollemntId] [subjectId] [0-10]: Qualifies a subject for a enrollment.
             --print -p [StudentCard] --options : Shows the expedient from a student, options are optionals and the command without options prints only by terminal.
                 Options: 
-                    -txt: Exports an expediento to a TXT file in the route /exports.
+                    -txt: Exports an expedients to a TXT file in the route /exports.
             =======================
         """);
     }
@@ -45,17 +45,27 @@ public class Main {
                     return;
                 }
                 studentsController.addStudentsXML();
-                break;
             }
 
             case "--enroll", "-e" -> {
-                if (args.length < 3) {
-                    System.err.println("There are not enought arguments.");
+                if (args.length < 4) {
+                    System.err.println("There are not enough arguments.");
+                    System.out.println("Usage: --enroll [studentCard] [courseId] [year]");
                     return;
                 }
 
                 String studentCard = args[1];
-                int courseId = parseInt(args[2]);
+                int courseId = 0;
+                int year = 0;
+
+                // We validate if courseId and year are numerics.
+                try {
+                    courseId = parseInt(args[2]);
+                    year = parseInt(args[3]);
+                } catch (Exception e) {
+                    System.err.println("Course id and year must be numeric.");
+                    return;
+                }
 
                 if (studentsController.studentExists(studentCard) && courseController.courseExists(courseId)){
                     if (enrollmentController.isFirstEnrollment(studentCard)) {
@@ -63,7 +73,7 @@ public class Main {
                         List<Subject> subjectsFirstYear = subjectController.getCourseSubject(courseId, 1);
 
                         // Create the enrollment
-                        enrollmentController.enrollStudent(studentCard, courseId);
+                        enrollmentController.enrollStudent(studentCard, courseId, year);
 
                         // Adds Subject initial scores for the new enrollment.
                         Enrollment enrollment = enrollmentController.getLastStudentEnrollment(studentCard);
@@ -76,7 +86,7 @@ public class Main {
                         List<Subject> subjectsSecondYear = subjectController.getCourseSubject(courseId, 2);
 
                         // Creates the second enrollment.
-                        enrollmentController.enrollStudent(studentCard, courseId);
+                        enrollmentController.enrollStudent(studentCard, courseId, year);
 
                         // Get the new enrollment created.
                         Enrollment enrollment = enrollmentController.getLastStudentEnrollment(studentCard);
@@ -100,13 +110,21 @@ public class Main {
             }
             case "--qualify", "-q" -> {
                 if (args.length < 4) {
-                    System.err.println("There are not enought arguments.");
+                    System.err.println("There are not enough arguments.");
                     System.out.println("Usage: --qualify [enrollmentId] [subjectId] [0-10]");
-                    return;
                 } else {
-                    int enrollment = parseInt(args[1]);
-                    int subject = parseInt(args[2]);
-                    int score = parseInt(args[3]);
+                    int enrollment = 0;
+                    int subject = 0;
+                    int score = 0;
+
+                    try {
+                        enrollment = parseInt(args[2]);
+                        subject = parseInt(args[3]);
+                        score = parseInt(args[4]);
+                    } catch (Exception e){
+                        System.err.println("Enrollment id, subject id and score must be numeric.");
+                        return;
+                    }
 
                     if (score < 0 || score > 10) {
                         System.err.println("Score must be between 0 and 10.");
@@ -118,13 +136,39 @@ public class Main {
             }
 
             case "--print", "-p" -> {
-                if (args.length < 2 ) {
+                if (args.length < 3 ) {
                     System.err.println("There are not enough arguments.");
-                    return;
-                } else if (args.length == 3 && args[2].equals("-txt")) {
-                    printController.printExpedientTXT(args[1]);
-                } else if (args.length == 2) {
-                    printController.printExpedient(args[1]);
+                    System.out.println("Usage: --print [studentIdCard] [option]");
+                } else if (args.length == 3) {
+                    String idCard = args[1];
+                    int idCourse = 0;
+
+                    try {
+                        idCourse = parseInt(args[2]);
+                    } catch (Exception e) {
+                        System.err.println("Course id must be numeric.");
+                        return;
+                    }
+
+                    // We check if student and course exists.
+                    if (!studentsController.studentExists(idCard)){
+                        System.err.println("The student with id " + idCard + " does not exist in the database.");
+                        return;
+                    }
+
+                    if (!courseController.courseExists(idCourse)){
+                        System.err.println("Course with id " + idCourse + " does not exist in the database.");
+                        return;
+                    }
+                    
+                    List<Enrollment> enrollments = enrollmentController.getStudentEnrollmentsCourse(idCard, idCourse);
+
+                    if (enrollments.isEmpty()) {
+                        System.err.println("There are no enrolled students in the database to the course " + idCourse + ".");
+                        return;
+                    }
+                    printController.printExpedient(enrollments);
+
                 } else {
                     System.err.println("There are not enough arguments.");
                 }

@@ -1,8 +1,8 @@
-2025-12-08 12:01:33 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
-2025-12-08 12:01:33 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2025-12-08 12:01:33 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-2025-12-08 12:01:33 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-08 12:01:33 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-12-09 12:07:46 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 12:07:46 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 12:07:47 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 12:07:47 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 12:07:47 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://100.116.29.49:5432/VTInstitute]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -14,17 +14,17 @@
 	Pool: DriverManagerConnectionProviderImpl
 	Minimum pool size: 1
 	Maximum pool size: 20
-2025-12-08 12:01:34 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-08 12:01:34 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
-2025-12-08 12:01:35 INFO  org.vtinstitute.controller.LogsController - Getting student 19828233
-2025-12-08 12:01:35 INFO  org.vtinstitute.controller.LogsController - Getting student enrollment by code 19828233
-2025-12-08 12:01:35 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 47
-2025-12-08 12:01:35 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 48
-2025-12-08 12:04:03 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
-2025-12-08 12:04:03 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2025-12-08 12:04:04 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-2025-12-08 12:04:04 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-08 12:04:04 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-12-09 12:07:48 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-09 12:07:49 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
+2025-12-09 12:07:49 INFO  org.vtinstitute.controller.LogsController - Getting student 19828233
+2025-12-09 12:07:49 INFO  org.vtinstitute.controller.LogsController - Getting student enrollment by code 19828233
+2025-12-09 12:07:49 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 47
+2025-12-09 12:07:49 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 48
+2025-12-09 12:47:29 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 12:47:29 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 12:47:30 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 12:47:30 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 12:47:30 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://100.116.29.49:5432/VTInstitute]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -36,13 +36,17 @@
 	Pool: DriverManagerConnectionProviderImpl
 	Minimum pool size: 1
 	Maximum pool size: 20
-2025-12-08 12:04:05 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-08 12:04:05 INFO  org.vtinstitute.controller.LogsController - Updating score for enrollment 47 and subject 3
-2025-12-08 12:05:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
-2025-12-08 12:05:13 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2025-12-08 12:05:13 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-2025-12-08 12:05:13 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-08 12:05:13 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-12-09 12:47:31 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-09 12:47:31 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
+2025-12-09 12:47:32 INFO  org.vtinstitute.controller.LogsController - Getting student 19828233
+2025-12-09 12:47:32 INFO  org.vtinstitute.controller.LogsController - Getting student enrollment by code 19828233
+2025-12-09 12:47:32 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 47
+2025-12-09 12:47:32 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 48
+2025-12-09 14:46:39 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 14:46:39 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 14:46:39 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 14:46:40 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 14:46:40 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://100.116.29.49:5432/VTInstitute]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -54,13 +58,17 @@
 	Pool: DriverManagerConnectionProviderImpl
 	Minimum pool size: 1
 	Maximum pool size: 20
-2025-12-08 12:05:14 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-08 12:05:14 INFO  org.vtinstitute.controller.LogsController - Updating score for enrollment 47 and subject 3
-2025-12-08 13:48:24 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
-2025-12-08 13:48:24 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2025-12-08 13:48:24 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-2025-12-08 13:48:24 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-08 13:48:24 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-12-09 14:46:41 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-09 14:46:41 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
+2025-12-09 14:46:41 INFO  org.vtinstitute.controller.LogsController - Checking if course exists for code 1
+2025-12-09 14:46:41 INFO  org.vtinstitute.controller.LogsController - Getting student enrollment by code 19828233
+2025-12-09 14:46:41 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 47
+2025-12-09 14:46:41 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 48
+2025-12-09 14:47:08 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 14:47:08 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 14:47:08 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 14:47:09 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 14:47:09 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://100.116.29.49:5432/VTInstitute]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -72,33 +80,918 @@
 	Pool: DriverManagerConnectionProviderImpl
 	Minimum pool size: 1
 	Maximum pool size: 20
-2025-12-08 13:48:25 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-08 13:48:25 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
-2025-12-08 13:48:26 INFO  org.vtinstitute.controller.LogsController - Getting student 19828233
-2025-12-08 13:48:26 INFO  org.vtinstitute.controller.LogsController - Getting student enrollment by code 19828233
-2025-12-08 13:48:26 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 47
-2025-12-08 13:48:26 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 48
-2025-12-08 13:48:26 INFO  org.vtinstitute.controller.LogsController - Successfully exported exports/expedient_19828233.txt
-2025-12-08 13:48:42 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
-2025-12-08 13:48:42 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-2025-12-08 13:48:42 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-2025-12-08 13:48:42 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-08 13:48:42 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://100.116.29.49:5432/VTInstitute]
+2025-12-09 14:47:09 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-09 14:47:10 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
+2025-12-09 14:47:10 INFO  org.vtinstitute.controller.LogsController - Checking if course exists for code 2
+2025-12-09 14:47:10 INFO  org.vtinstitute.controller.LogsController - Getting student enrollment by code 19828233
+2025-12-09 16:45:17 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 16:45:17 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 16:45:17 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 16:45:17 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 16:45:17 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 16:47:04 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 16:47:04 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 16:48:54 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 16:48:54 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 16:48:55 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 16:50:30 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 16:50:30 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 16:50:31 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 16:50:32 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 16:50:32 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 16:51:22 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 16:51:22 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 16:53:46 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 16:53:46 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 16:53:47 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 16:53:47 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 16:53:47 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 16:54:48 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 16:54:48 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 16:54:49 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 16:54:49 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 16:54:49 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 16:57:06 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 16:57:06 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 16:57:06 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 16:57:06 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 16:57:06 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 16:58:40 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 16:58:40 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 16:58:41 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 16:58:41 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 16:58:41 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:02:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:02:13 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:02:13 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:02:13 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 17:02:13 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:02:34 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:02:34 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:02:34 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:02:35 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 17:02:35 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:03:12 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:03:12 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:03:13 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:03:14 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 17:03:14 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:04:19 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:04:19 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:05:12 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:05:12 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:05:13 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:05:13 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 17:05:13 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:06:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:06:28 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:06:29 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:06:30 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 17:06:30 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:09:25 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:09:25 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:09:25 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:09:26 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 17:09:26 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:11:32 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:11:32 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:11:32 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:11:33 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 17:11:33 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:23:43 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:23:43 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:23:44 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:23:44 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 17:23:44 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:24:15 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:24:15 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:24:16 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:24:17 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 17:24:17 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:25:04 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:25:04 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:25:05 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:25:05 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query JDBC database metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:281) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:499) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:355) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:50) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:131) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:59) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:124) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:86) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:139) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:66) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:466) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:342) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:149) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:127) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:82) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:262) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:255) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:207) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:185) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:146) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:432) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1081) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1135) [hibernate-core-7.1.4.Final.jar:7.1.4.Final]
+	at org.vtinstitute.tools.HibernateUtils.buildSessionFactory(HibernateUtils.java:12) [classes/:?]
+	at org.vtinstitute.tools.HibernateUtils.<clinit>(HibernateUtils.java:8) [classes/:?]
+	at org.vtinstitute.controller.StudentsController.studentExists(StudentsController.java:67) [classes/:?]
+	at org.vtinstitute.Main.main(Main.java:154) [classes/:?]
+2025-12-09 17:25:05 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:25:22 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:25:22 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:25:22 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:25:24 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:25:24 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-eu-north-1.pooler.supabase.com:5432/postgres]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
-	Database version: 16.11
-	Default catalog/schema: VTInstitute/public
+	Database version: 17.6
+	Default catalog/schema: postgres/public
 	Autocommit mode: false
 	Isolation level: READ_COMMITTED
 	JDBC fetch size: none
 	Pool: DriverManagerConnectionProviderImpl
 	Minimum pool size: 1
 	Maximum pool size: 20
-2025-12-08 13:48:43 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
-2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Getting student 19828233
-2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Getting student enrollment by code 19828233
-2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 47
-2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 48
-2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Successfully exported exports/expedient_19828233.txt
+2025-12-09 17:25:25 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-09 17:25:27 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
+2025-12-09 17:25:50 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:25:50 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:25:50 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:25:51 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:25:52 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-eu-north-1.pooler.supabase.com:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-09 17:25:53 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-09 17:25:54 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
+2025-12-09 17:26:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-09 17:26:28 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-09 17:26:29 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-09 17:26:30 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09 17:26:31 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-eu-north-1.pooler.supabase.com:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-09 17:26:32 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-09 17:26:33 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists

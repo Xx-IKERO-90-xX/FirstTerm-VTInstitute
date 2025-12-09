@@ -20,7 +20,7 @@
             <Policies>
                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
             </Policies>
-            <!-- Solo ERROR -->
+            <!-- Just ERROR -->
             <Filters>
                 <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
             </Filters>

@@ -1,17 +1,12 @@
 package org.vtinstitute.controller;
 
-import jakarta.persistence.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.vtinstitute.connection.Database;
 import org.vtinstitute.handler.SAXHandler;
 import org.vtinstitute.models.Student;
 import org.vtinstitute.tools.HibernateUtils;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-import org.xml.sax.SAXNotRecognizedException;
-import org.xml.sax.SAXNotSupportedException;
-import org.vtinstitute.controller.LogsController;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.ParserConfigurationException;
@@ -29,8 +24,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class StudentsController {
     private SAXParser saxParser = null;

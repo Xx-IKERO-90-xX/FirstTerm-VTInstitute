@@ -3,7 +3,6 @@ package org.vtinstitute.controller;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
-import org.vtinstitute.connection.Database;
 import org.vtinstitute.models.Cours;
 import org.vtinstitute.models.Enrollment;
 import org.vtinstitute.controller.LogsController;
@@ -56,7 +55,7 @@ public class EnrollmentController {
 
 
     // Function that enrolls a Student to a course.
-    public void enrollStudent(String idCard, int course) {
+    public void enrollStudent(String idCard, int course, int year) {
         Transaction tx = null;
 
         try (Session session = HibernateUtils.getSession()) {
@@ -68,7 +67,7 @@ public class EnrollmentController {
             Enrollment enrollment = new Enrollment();
             enrollment.setStudent(student);
             enrollment.setCourse(cours);
-            enrollment.setYear(2025);
+            enrollment.setYear(year);
 
             session.persist(enrollment);
             tx.commit();
@@ -109,19 +108,24 @@ public class EnrollmentController {
                     .setParameter("student", idCard)
                     .setMaxResults(1)
                     .uniqueResult();
+        } catch (Exception e){
+            logsController.logError(e.getMessage());
+            System.err.println("There was a failure getting last student enrollment.");
+            return null;
         } finally {
             session.close();
         }
     }
 
     // Function that get enrollments from a student.
-    public List<Enrollment> getStudentEnrollments(String idCard) {
+    public List<Enrollment> getStudentEnrollmentsCourse(String idCard, int idCours) {
         Session session = HibernateUtils.getSession();
         try {
             logsController.logInfo("Getting student enrollment by code " + idCard);
-            String hql = "FROM Enrollment e WHERE e.student.idcard = :idCard ORDER BY e.year ASC";
+            String hql = "FROM Enrollment e WHERE e.student.idcard = :idCard AND e.course.id = :idCours ORDER BY e.year ASC";
             return session.createQuery(hql, Enrollment.class)
                     .setParameter("idCard", idCard)
+                    .setParameter("idCours", idCours)
                     .list();
         } finally {
             session.close();

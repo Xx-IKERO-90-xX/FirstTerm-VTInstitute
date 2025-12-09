@@ -1,0 +1,104 @@
+2025-12-08 12:01:33 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-08 12:01:33 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-08 12:01:33 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-08 12:01:33 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-08 12:01:33 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://100.116.29.49:5432/VTInstitute]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: VTInstitute/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-08 12:01:34 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-08 12:01:34 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
+2025-12-08 12:01:35 INFO  org.vtinstitute.controller.LogsController - Getting student 19828233
+2025-12-08 12:01:35 INFO  org.vtinstitute.controller.LogsController - Getting student enrollment by code 19828233
+2025-12-08 12:01:35 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 47
+2025-12-08 12:01:35 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 48
+2025-12-08 12:04:03 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-08 12:04:03 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-08 12:04:04 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-08 12:04:04 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-08 12:04:04 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://100.116.29.49:5432/VTInstitute]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: VTInstitute/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-08 12:04:05 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-08 12:04:05 INFO  org.vtinstitute.controller.LogsController - Updating score for enrollment 47 and subject 3
+2025-12-08 12:05:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-08 12:05:13 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-08 12:05:13 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-08 12:05:13 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-08 12:05:13 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://100.116.29.49:5432/VTInstitute]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: VTInstitute/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-08 12:05:14 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-08 12:05:14 INFO  org.vtinstitute.controller.LogsController - Updating score for enrollment 47 and subject 3
+2025-12-08 13:48:24 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-08 13:48:24 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-08 13:48:24 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-08 13:48:24 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-08 13:48:24 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://100.116.29.49:5432/VTInstitute]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: VTInstitute/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-08 13:48:25 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-08 13:48:25 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
+2025-12-08 13:48:26 INFO  org.vtinstitute.controller.LogsController - Getting student 19828233
+2025-12-08 13:48:26 INFO  org.vtinstitute.controller.LogsController - Getting student enrollment by code 19828233
+2025-12-08 13:48:26 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 47
+2025-12-08 13:48:26 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 48
+2025-12-08 13:48:26 INFO  org.vtinstitute.controller.LogsController - Successfully exported exports/expedient_19828233.txt
+2025-12-08 13:48:42 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-08 13:48:42 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-08 13:48:42 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-08 13:48:42 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-08 13:48:42 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://100.116.29.49:5432/VTInstitute]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: VTInstitute/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-08 13:48:43 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Checking if student 19828233 exists
+2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Getting student 19828233
+2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Getting student enrollment by code 19828233
+2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 47
+2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Getting scores by enrollment 48
+2025-12-08 13:48:44 INFO  org.vtinstitute.controller.LogsController - Successfully exported exports/expedient_19828233.txt

@@ -36,61 +36,46 @@ $$;
 --------------------------------------------------------------------------------------------
 
 
-Automatically this function limits to a student to enrolly only twice.
+Automatically this function limits to a student to enrolly only twice in a course.
 ------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION limit_enrollments()
 RETURNS TRIGGER AS $$
 DECLARE
     total INT;
 BEGIN
+    -- Contar matrículas del mismo estudiante en el mismo curso
     SELECT COUNT(*) INTO total
     FROM enrollments
-    WHERE student = NEW.student;
+    WHERE student = NEW.student
+      AND course = NEW.course;
 
+    -- Si ya tiene 2 matrículas en el mismo curso → error
     IF total >= 2 THEN
-        RAISE EXCEPTION 'El estudiante % no puede tener más de 2 matrículas', NEW.student;
+        RAISE EXCEPTION
+            'El estudiante % no puede tener más de 2 matrículas en el curso %',
+            NEW.student, NEW.course;
     END IF;
 
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
+DROP TRIGGER IF EXISTS trg_limit_enrollments ON enrollments;
 
 CREATE TRIGGER trg_limit_enrollments
 BEFORE INSERT ON enrollments
-FOR EACH ROW EXECUTE FUNCTION limit_enrollments();
-
------------------------------------------------------------------------------------------------------------
-CREATE OR REPLACE FUNCTION limit_scores()
-RETURNS TRIGGER AS $$
-DECLARE
-    total INT;
-BEGIN
-    SELECT COUNT(*) INTO total
-    FROM scores
-    WHERE enrollment_id = NEW.enrollment_id;
-
-    IF total >= 10 THEN
-        RAISE EXCEPTION 'La matrícula % ya tiene el máximo de asignaturas permitidas', NEW.enrollment_id;
-    END IF;
-
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER trg_limit_scores
-BEFORE INSERT ON scores
-FOR EACH ROW EXECUTE FUNCTION limit_scores();
+FOR EACH ROW
+EXECUTE FUNCTION limit_enrollments();
 
 
-----------------------------------------------------------------
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION public.getEnrollmentScoresIJRH(idenrollment integer)
  RETURNS TABLE(subject text, score integer, year integer)
  LANGUAGE plpgsql
 AS $function$
 BEGIN
     RETURN QUERY
-    -- ¡CORRECCIÓN! Usamos ::TEXT para forzar la coincidencia de tipo.
-    SELECT subjects.name::TEXT, 
+    SELECT subjects.name::TEXT,
            scores.score, 
            subjects.year
     FROM scores

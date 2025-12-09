@@ -1,6 +1,5 @@
 package org.vtinstitute.controller;
 import org.hibernate.Session;
-import org.vtinstitute.connection.Database;
 import org.vtinstitute.models.Subject;
 import org.vtinstitute.tools.HibernateUtils;
 import org.vtinstitute.controller.LogsController;
