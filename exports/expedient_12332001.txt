@@ -1,0 +1,11 @@
+Year   Subjects                            Score
+-------------------------------------------------------------
+2023   Markup Languages                    7    
+2023   Database Management Systems         8    
+2023   Development Environments            4    
+2023   Programming                         4    
+2023   Technical English                   7    
+2024   Services and Processes              8    
+2024   Development Environments            9    
+2024   Programming                         7    
+2024   Data Access                         6    

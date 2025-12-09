@@ -50,7 +50,6 @@ public class Main {
                 }
 
                 String xmlFile = args[1];
-
                 studentsController.addStudentsXML(xmlFile);
             }
 
@@ -145,40 +144,58 @@ public class Main {
             case "--print", "-p" -> {
                 if (args.length < 3 ) {
                     System.err.println("There are not enough arguments.");
-                    System.out.println("Usage: --print [studentIdCard] [option]");
-                } else if (args.length == 3) {
-                    String idCard = args[1];
-                    int idCourse = 0;
-
-                    try {
-                        idCourse = parseInt(args[2]);
-                    } catch (Exception e) {
-                        System.err.println("Course id must be numeric.");
-                        return;
-                    }
-
-                    // We check if student and course exists.
-                    if (!studentsController.studentExists(idCard)){
-                        System.err.println("The student with id " + idCard + " does not exist in the database.");
-                        return;
-                    }
-
-                    if (!courseController.courseExists(idCourse)){
-                        System.err.println("Course with id " + idCourse + " does not exist in the database.");
-                        return;
-                    }
-                    
-                    List<Enrollment> enrollments = enrollmentController.getStudentEnrollmentsCourse(idCard, idCourse);
-
-                    if (enrollments.isEmpty()) {
-                        System.err.println("There are no enrolled students in the database to the course " + idCourse + ".");
-                        return;
-                    }
-                    printController.printExpedient(enrollments);
-
-                } else {
-                    System.err.println("There are not enough arguments.");
+                    System.out.println("Usage: --print {studentIdCard} {option}");
+                    return;
                 }
+                if (args.length > 4) {
+                    System.err.println("Too many arguments.");
+                    System.out.println("Usage: --print {studentIdCard} {option}");
+                    return;
+                }
+
+                String idCard = args[1];
+                int idCourse = 0;
+
+                // We check if the idCourse is a number or letter.
+                try {
+                    idCourse = parseInt(args[2]);
+                } catch (Exception e) {
+                    System.err.println("Course id must be numeric.");
+                    return;
+                }
+
+                // We check if student and course exists.
+                if (!studentsController.studentExists(idCard)){
+                    System.err.println("The student with id " + idCard + " does not exist in the database.");
+                    return;
+                }
+                if (!courseController.courseExists(idCourse)){
+                    System.err.println("Course with id " + idCourse + " does not exist in the database.");
+                    return;
+                }
+
+                // We get the student enrollments from a specific cours.
+                List<Enrollment> enrollments = enrollmentController.getStudentEnrollmentsCourse(idCard, idCourse);
+                if (enrollments.isEmpty()) {
+                    System.err.println("There are no enrolled students in the database to the course " + idCourse + ".");
+                    return;
+                }
+
+                if (args.length == 4) {
+                    switch (args[3]) {
+                        case "-txt" -> {
+                            printController.printExpedientTXT(idCard, enrollments);
+                            return;
+                        }
+                        default -> {
+                            System.err.println("Please enter a valid option.");
+                            System.out.println("Usage: --print {studentIdCard} {option}");
+                            return;
+                        }
+                    }
+                }
+
+                printController.printExpedient(enrollments);
             }
         }
     }

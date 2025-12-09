@@ -41,4 +41,44 @@ public class PrintController {
             }
         }
     }
+
+    // Function that prints a Student expedient to a txtFile.
+    public void printExpedientTXT(String idCard, List<Enrollment> enrollments) {
+        String exportsFolder = "exports/";
+        String fileName = exportsFolder + "expedient_" + idCard + ".txt";
+
+        File folder = new File(exportsFolder);
+        if (!folder.exists()) {
+            folder.mkdirs();
+        }
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            // Header
+            writer.write(String.format("%-6s %-35s %-5s%n", "Year", "Subjects", "Score"));
+            writer.write("-------------------------------------------------------------\n");
+
+            for (Enrollment enrollment : enrollments) {
+                List<Map<String,Object>> scores =
+                        scoresController.getScoresByEnrollment(enrollment.getId());
+
+                for (var row : scores) {
+                    String subjectName = (String) row.get("subject");
+                    int score = (int) row.get("score");
+
+                    writer.write(String.format(
+                            "%-6d %-35s %-5d%n",
+                            enrollment.getYear(),
+                            subjectName,
+                            score
+                    ));
+                }
+            }
+
+            System.out.println("Expedient generated: " + fileName);
+        } catch (IOException e) {
+            logsController.logError(e.getMessage());
+            System.err.println("Error writing expedient file: " + fileName);
+        }
+
+    }
 }
