@@ -76,6 +76,8 @@ public class StudentsController {
         }
     }
 
+
+    // Parses students from the XML file to a List Student Object. 
     private List<Student> parseStundents(String xmlPath) {
         var handler = new SAXHandler();
         File xmlDocument = Paths.get(xmlPath).toFile();
@@ -100,7 +102,7 @@ public class StudentsController {
         return handler.getStudents();
     }
 
-
+    // Function that reads the XML and operates with it.
     public void addStudentsXML(String xmlName) {
         var xsdFile = new File(xsdPath);
         List<Student> students = new ArrayList<>();
@@ -157,6 +159,32 @@ public class StudentsController {
         } finally {
             session.close();
         }
-
     }
+
+    // Function that deletes a Student
+    public void deleteStudent(String idCard) {
+        Transaction tx = null;
+
+        try (Session session = HibernateUtils.getSessionFactory().openSession()) {
+            tx = session.beginTransaction();
+
+            Student student = getStudent(idCard);
+            if (student != null) {
+                session.remove(student);
+                System.out.println("Student deleted: " + idCard);
+
+            } else {
+                System.err.println("Student not found: " + idCard);
+            }
+
+            tx.commit();
+
+        } catch (Exception e) {
+            if (tx != null) tx.rollback();
+            logsController.logError(e.getMessage());
+            System.err.println("There was a failure deleting the student " + idCard);
+        }
+    }
+
+
 }
