@@ -43,9 +43,9 @@ public class PrintController {
     }
 
     // Function that prints a Student expedient to a txtFile.
-    public void printExpedientTXT(String idCard, List<Enrollment> enrollments) {
+    public void printExpedientTXT(String idCard, int idCours, List<Enrollment> enrollments) {
         String exportsFolder = "exports/";
-        String fileName = exportsFolder + "expedient_" + idCard + ".txt";
+        String fileName = exportsFolder + idCard + "-" + idCours + ".txt";
 
         File folder = new File(exportsFolder);
         if (!folder.exists()) {

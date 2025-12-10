@@ -183,8 +183,8 @@ public class Main {
 
                 if (args.length == 4) {
                     switch (args[3]) {
-                        case "-txt" -> {
-                            printController.printExpedientTXT(idCard, enrollments);
+                        case "--file", "-f" -> {
+                            printController.printExpedientTXT(idCard, idCourse, enrollments);
                             return;
                         }
                         default -> {
