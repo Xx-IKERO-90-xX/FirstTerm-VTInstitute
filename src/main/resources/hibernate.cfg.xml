@@ -6,9 +6,9 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://aws-1-eu-north-1.pooler.supabase.com:5432/postgres</property>
-        <property name="hibernate.connection.username">postgres.mcimxfemqpybdrucbsdj</property>
-        <property name="hibernate.connection.password">ikero9090</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">postgres</property>
 
 
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>

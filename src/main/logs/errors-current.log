@@ -7,3 +7,5 @@
   Detail: Key (idcard)=(30541187) already exists.] [insert into students (email,firstname,lastname,phone,idcard) values (?,?,?,?,?)]
 2025-12-09 19:06:40 ERROR org.vtinstitute.controller.LogsController - could not execute statement [ERROR: duplicate key value violates unique constraint "students_pkey"
   Detail: Key (idcard)=(41002560) already exists.] [insert into students (email,firstname,lastname,phone,idcard) values (?,?,?,?,?)]
+2025-12-10 15:25:20 ERROR org.vtinstitute.controller.LogsController - inputs\Subjects.xml
+2025-12-10 15:41:33 ERROR org.vtinstitute.controller.LogsController - inputs\Subjects.xml

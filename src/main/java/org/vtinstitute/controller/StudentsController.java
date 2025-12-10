@@ -127,7 +127,7 @@ public class StudentsController {
             students = parseStundents(xmlPath);
         } catch (Exception ex) {
             logsController.logError(ex.getMessage());
-            System.err.println("ERROR: XML NOT VALID.");
+            System.err.println("ERROR: Xml file not valid or not found.");
             students = new ArrayList<>();
         }
 
