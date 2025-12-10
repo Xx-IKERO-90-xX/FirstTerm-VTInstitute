@@ -52,6 +52,5 @@ public class Subject {
         this.hours = hours;
     }
 
-    public void setCode(int code) {
-    }
+    public void setCode(int code) {}
 }

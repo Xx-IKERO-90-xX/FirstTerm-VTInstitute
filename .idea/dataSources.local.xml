@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-242.23726.103">
-    <data-source name="VTInstitute@100.116.29.49" uuid="51c5a924-e07c-44b0-8073-dd4cc04a8bc9">
+    <data-source name="postgres@localhost" uuid="51c5a924-e07c-44b0-8073-dd4cc04a8bc9">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
       <schema-mapping />
     </data-source>

@@ -5,7 +5,9 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class SAXHandler extends DefaultHandler {
@@ -17,6 +19,7 @@ public class SAXHandler extends DefaultHandler {
     private boolean bLastName = false;
     private boolean bPhone = false;
     private boolean bEmail = false;
+    private boolean bBirthdate = false;
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes atts) throws SAXException {
@@ -31,11 +34,12 @@ public class SAXHandler extends DefaultHandler {
             case "lastname" -> bLastName = true;
             case "phone" -> bPhone = true;
             case "email" -> bEmail = true;
+            case "birthdate" -> bBirthdate = true;
         }
     }
 
     @Override
-    public void characters(char[] ch, int start, int length) throws SAXException {
+    public void characters(char[] ch, int start, int length) {
         String content = new String(ch, start, length);
 
         if (bIdCard) {
@@ -57,6 +61,10 @@ public class SAXHandler extends DefaultHandler {
         if (bEmail) {
             student.setEmail(content);
             bEmail = false;
+        }
+        if (bBirthdate) {
+            student.setBirthdate(content);
+            bBirthdate = false;
         }
     }
 

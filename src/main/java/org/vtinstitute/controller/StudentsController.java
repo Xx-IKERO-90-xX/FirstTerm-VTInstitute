@@ -115,8 +115,8 @@ public class StudentsController {
             String schemaLang = XMLConstants.W3C_XML_SCHEMA_NS_URI;
             SchemaFactory factory = SchemaFactory.newInstance(schemaLang);
             factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
-            Schema schema = factory.newSchema(xsdFile);
 
+            Schema schema = factory.newSchema(xsdFile);
             Validator validator = schema.newValidator();
 
             var source = new SAXSource(new InputSource(reader));
@@ -125,10 +125,13 @@ public class StudentsController {
             System.out.println("The document was validated OK");
 
             students = parseStundents(xmlPath);
-        } catch (Exception ex) {
+        } catch (SAXException ex) {
             logsController.logError(ex.getMessage());
-            System.err.println("ERROR: Xml file not valid or not found.");
+            System.err.println("DO NOT ALTER THE DATABASE TO MAKE THE FIELD MANDATORY");
             students = new ArrayList<>();
+        } catch (IOException e) {
+            logsController.logError(e.getMessage());
+            System.err.println("There was an error parsing XML");
         }
 
         if (!students.isEmpty()) {

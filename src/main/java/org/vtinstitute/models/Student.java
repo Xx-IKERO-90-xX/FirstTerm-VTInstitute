@@ -2,6 +2,8 @@ package org.vtinstitute.models;
 
 import jakarta.persistence.*;
 
+import java.util.Date;
+
 @Entity
 @Table(name = "students")
 public class Student {
@@ -21,6 +23,9 @@ public class Student {
 
     @Column(name = "email", length = 100)
     private String email;
+
+    @Column(name = "birthdate")
+    private String birthdate;
 
     public String getIdcard() {
         return idcard;
@@ -62,4 +67,7 @@ public class Student {
         this.email = email;
     }
 
+    public void setBirthdate(String birthdate) {this.birthdate = birthdate;}
+
+    public String getBirthdate() {return birthdate;}
 }

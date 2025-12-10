@@ -1217,3 +1217,163 @@ java.lang.IllegalStateException: Cannot get a connection as the driver manager i
 2025-12-10 15:41:57 INFO  org.vtinstitute.controller.LogsController - Adding student 20150912 to DB
 2025-12-10 15:41:57 INFO  org.vtinstitute.controller.LogsController - Adding student 30541187 to DB
 2025-12-10 15:41:57 INFO  org.vtinstitute.controller.LogsController - Adding student 41002560 to DB
+2025-12-10 16:27:58 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:27:58 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.2.4.a: Se ha encontrado contenido no válido a partir del elemento 'email'. Se esperaba uno de '{phone}'.
+2025-12-10 16:30:51 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:30:51 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.2.4.a: Se ha encontrado contenido no válido a partir del elemento 'email'. Se esperaba uno de '{phone}'.
+2025-12-10 16:34:53 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:34:53 ERROR org.vtinstitute.controller.LogsController - s4s-att-not-allowed: El atributo 'use' no puede aparecer en el elemento 'element'.
+2025-12-10 16:35:00 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:35:00 ERROR org.vtinstitute.controller.LogsController - s4s-att-not-allowed: El atributo 'use' no puede aparecer en el elemento 'element'.
+2025-12-10 16:35:16 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:35:16 INFO  org.vtinstitute.controller.LogsController - Parsing XML
+2025-12-10 16:35:16 INFO  org.vtinstitute.controller.LogsController - Creating SAXParser
+2025-12-10 16:35:16 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-10 16:35:16 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-10 16:35:17 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-10 16:35:17 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 16:35:17 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.4
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-10 16:35:19 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 16:35:19 INFO  org.vtinstitute.controller.LogsController - Adding student 19828233 to DB
+2025-12-10 16:35:20 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:35:20 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(19828233).
+2025-12-10 16:35:20 INFO  org.vtinstitute.controller.LogsController - Adding student 20150912 to DB
+2025-12-10 16:35:20 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:35:20 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(20150912).
+2025-12-10 16:35:20 INFO  org.vtinstitute.controller.LogsController - Adding student 30541187 to DB
+2025-12-10 16:35:20 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:35:20 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(30541187).
+2025-12-10 16:35:20 INFO  org.vtinstitute.controller.LogsController - Adding student 41002560 to DB
+2025-12-10 16:35:20 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:35:20 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(41002560).
+2025-12-10 16:35:31 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:35:31 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.2.4.a: Se ha encontrado contenido no válido a partir del elemento 'email'. Se esperaba uno de '{phone}'.
+2025-12-10 16:35:47 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:35:47 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.2.4.a: Se ha encontrado contenido no válido a partir del elemento 'email'. Se esperaba uno de '{phone}'.
+2025-12-10 16:37:30 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:37:30 INFO  org.vtinstitute.controller.LogsController - Parsing XML
+2025-12-10 16:37:30 INFO  org.vtinstitute.controller.LogsController - Creating SAXParser
+2025-12-10 16:37:30 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-10 16:37:30 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-10 16:37:31 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-10 16:37:31 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 16:37:31 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.4
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-10 16:37:33 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 16:37:33 INFO  org.vtinstitute.controller.LogsController - Adding student 19828233 to DB
+2025-12-10 16:37:33 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:37:33 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(19828233).
+2025-12-10 16:37:33 INFO  org.vtinstitute.controller.LogsController - Adding student 20150912 to DB
+2025-12-10 16:37:33 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:37:33 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(20150912).
+2025-12-10 16:37:33 INFO  org.vtinstitute.controller.LogsController - Adding student 30541187 to DB
+2025-12-10 16:37:33 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:37:33 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(30541187).
+2025-12-10 16:37:33 INFO  org.vtinstitute.controller.LogsController - Adding student 41002560 to DB
+2025-12-10 16:37:33 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:37:33 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(41002560).
+2025-12-10 16:38:09 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:38:09 INFO  org.vtinstitute.controller.LogsController - Parsing XML
+2025-12-10 16:38:09 INFO  org.vtinstitute.controller.LogsController - Creating SAXParser
+2025-12-10 16:38:09 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-10 16:38:09 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-10 16:38:10 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-10 16:38:10 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 16:38:10 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.4
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-10 16:38:12 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 16:38:12 INFO  org.vtinstitute.controller.LogsController - Adding student 19828233 to DB
+2025-12-10 16:38:12 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:38:12 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(19828233).
+2025-12-10 16:38:12 INFO  org.vtinstitute.controller.LogsController - Adding student 20150912 to DB
+2025-12-10 16:38:12 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:38:12 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(20150912).
+2025-12-10 16:38:12 INFO  org.vtinstitute.controller.LogsController - Adding student 30541187 to DB
+2025-12-10 16:38:12 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:38:12 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(30541187).
+2025-12-10 16:38:12 INFO  org.vtinstitute.controller.LogsController - Adding student 41002560 to DB
+2025-12-10 16:38:12 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:38:12 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(41002560).
+2025-12-10 16:38:21 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:38:21 ERROR org.vtinstitute.controller.LogsController - cvc-pattern-valid: El valor '' no es de faceta válida con respecto al patrón '[6-9][0-9]{8}' para el tipo 'phoneType'.
+2025-12-10 16:39:06 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:39:06 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.2.4.a: Se ha encontrado contenido no válido a partir del elemento 'phone'. Se esperaba uno de '{email}'.
+2025-12-10 16:39:20 INFO  org.vtinstitute.controller.LogsController - Adding students to XML
+2025-12-10 16:39:20 INFO  org.vtinstitute.controller.LogsController - Parsing XML
+2025-12-10 16:39:20 INFO  org.vtinstitute.controller.LogsController - Creating SAXParser
+2025-12-10 16:39:20 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.4.Final
+2025-12-10 16:39:20 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-12-10 16:39:21 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-10 16:39:21 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-10 16:39:21 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.4
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-12-10 16:39:23 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-10 16:39:23 INFO  org.vtinstitute.controller.LogsController - Adding student 19828233 to DB
+2025-12-10 16:39:23 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:39:23 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(19828233).
+2025-12-10 16:39:23 INFO  org.vtinstitute.controller.LogsController - Adding student 20150912 to DB
+2025-12-10 16:39:23 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:39:23 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(20150912).
+2025-12-10 16:39:23 INFO  org.vtinstitute.controller.LogsController - Adding student 30541187 to DB
+2025-12-10 16:39:23 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:39:23 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(30541187).
+2025-12-10 16:39:23 INFO  org.vtinstitute.controller.LogsController - Adding student 41002560 to DB
+2025-12-10 16:39:23 WARN  org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 23505
+2025-12-10 16:39:23 WARN  org.hibernate.orm.jdbc.error - ERROR: llave duplicada viola restricción de unicidad «students_pkey»
+  Detail: Ya existe la llave (idcard)=(41002560).

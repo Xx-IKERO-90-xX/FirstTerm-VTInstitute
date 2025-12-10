@@ -6,13 +6,15 @@
       <lastname>García Pérez</lastname>
       <email>jrgarcia@iesmarenostrum.com</email>
       <phone>616116611</phone>
+      <birthdate></birthdate>
     </student>
 
     <student idcard="20150912">
       <firstname>Ana</firstname>
       <lastname>López Fernández</lastname>
-      <email>alopezf@iesmarenostrum.com</email>
+      <email></email>
       <phone>622334455</phone>
+      <birthdate></birthdate>
     </student>
 
     <student idcard="30541187">
@@ -20,6 +22,7 @@
       <lastname>Rodríguez Sánchez</lastname>
       <email>mrodriguezs@iesmarenostrum.com</email>
       <phone>633445566</phone>
+      <birthdate></birthdate>
     </student>
 
     <student idcard="41002560">
@@ -27,6 +30,7 @@
       <lastname>Martínez Gil</lastname>
       <email>mmartinezg@iesmarenostrum.com</email>
       <phone>644556677</phone>
+      <birthdate></birthdate>
     </student>
   </students>
 </vtinstitute>

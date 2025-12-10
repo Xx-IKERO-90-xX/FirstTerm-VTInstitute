@@ -14,8 +14,9 @@
                                     <xs:sequence>
                                         <xs:element name="firstname" type="nameType"/>
                                         <xs:element name="lastname" type="lastnameType"/>
-                                        <xs:element name="email" type="emailType"/>
+                                        <xs:element name="email"/>
                                         <xs:element name="phone" type="phoneType"/>
+                                        <xs:element name="birthdate"/>
                                     </xs:sequence>
                                     <xs:attribute name="idcard" type="idcardType" use="required"/>
                                 </xs:complexType>
@@ -53,12 +54,6 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="emailType">
-        <!-- patrón básico de email (no cubre todos los casos extremos, pero vale para correos usuales) -->
-        <xs:restriction base="xs:string">
-            <xs:pattern value="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[A-Za-z]{2,}"/>
-        </xs:restriction>
-    </xs:simpleType>
 
     <xs:simpleType name="phoneType">
         <!-- 9 dígitos, empieza por 6-9 (España) -->

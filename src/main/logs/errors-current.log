@@ -9,3 +9,11 @@
   Detail: Key (idcard)=(41002560) already exists.] [insert into students (email,firstname,lastname,phone,idcard) values (?,?,?,?,?)]
 2025-12-10 15:25:20 ERROR org.vtinstitute.controller.LogsController - inputs\Subjects.xml
 2025-12-10 15:41:33 ERROR org.vtinstitute.controller.LogsController - inputs\Subjects.xml
+2025-12-10 16:27:58 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.2.4.a: Se ha encontrado contenido no válido a partir del elemento 'email'. Se esperaba uno de '{phone}'.
+2025-12-10 16:30:51 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.2.4.a: Se ha encontrado contenido no válido a partir del elemento 'email'. Se esperaba uno de '{phone}'.
+2025-12-10 16:34:53 ERROR org.vtinstitute.controller.LogsController - s4s-att-not-allowed: El atributo 'use' no puede aparecer en el elemento 'element'.
+2025-12-10 16:35:00 ERROR org.vtinstitute.controller.LogsController - s4s-att-not-allowed: El atributo 'use' no puede aparecer en el elemento 'element'.
+2025-12-10 16:35:31 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.2.4.a: Se ha encontrado contenido no válido a partir del elemento 'email'. Se esperaba uno de '{phone}'.
+2025-12-10 16:35:47 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.2.4.a: Se ha encontrado contenido no válido a partir del elemento 'email'. Se esperaba uno de '{phone}'.
+2025-12-10 16:38:21 ERROR org.vtinstitute.controller.LogsController - cvc-pattern-valid: El valor '' no es de faceta válida con respecto al patrón '[6-9][0-9]{8}' para el tipo 'phoneType'.
+2025-12-10 16:39:06 ERROR org.vtinstitute.controller.LogsController - cvc-complex-type.2.4.a: Se ha encontrado contenido no válido a partir del elemento 'phone'. Se esperaba uno de '{email}'.
