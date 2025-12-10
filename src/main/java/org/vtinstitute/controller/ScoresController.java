@@ -3,10 +3,13 @@ package org.vtinstitute.controller;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;
+import org.hibernate.query.Query;
 import org.vtinstitute.models.Enrollment;
 import org.vtinstitute.models.Score;
 import org.vtinstitute.models.Subject;
 import org.vtinstitute.tools.HibernateUtils;
+
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -141,6 +144,38 @@ public class ScoresController {
           System.err.println("There was an error while trying to add new scores.");
         } finally {
             session.close();
+        }
+    }
+
+    // Function that closes actual courses.
+    public void closeActualCourses() {
+        LocalDate localDate = LocalDate.now();
+        Transaction tx = null;
+        Session session = HibernateUtils.getSession();
+
+        int year = localDate.getYear();
+
+        try {
+            tx = session.beginTransaction();
+
+            String hql = """
+                UPDATE Score s 
+                SET s.score = 0
+                WHERE s.enrollment.year = :year 
+                AND s.score = null 
+            """;
+            session.createMutationQuery(hql)
+                    .setParameter("year", year)
+                    .executeUpdate();
+
+            tx.commit();
+            System.out.println("Courses from year " + year + " closed!");
+        } catch (Exception e) {
+            if (tx != null) tx.rollback();
+            logsController.logError(e.getMessage());
+            System.err.println("There was an error closing actual courses.");
+        } finally {
+            if (session.isOpen()) session.close();
         }
     }
 

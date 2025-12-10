@@ -5,6 +5,7 @@ import org.vtinstitute.models.Enrollment;
 import org.vtinstitute.models.Subject;
 
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
@@ -28,7 +29,11 @@ public class Main {
             --qualify -q {enrollemntId} {subjectId} {0-10}: Qualifies a subject for a enrollment.
             --print -p {StudentCard} --options : Shows the expedient from a student, options are optionals and the command without options prints only by terminal.
                 Options: 
-                    -txt: Exports an expedients to a TXT file in the route /exports.
+                    --file -f: Exports an expedients to a TXT file in the route /exports.
+            --close -c : Closes actual courses.
+                Options:
+                    --force -f: Forces to close actual courses.  
+             
             =======================
         """);
     }
@@ -196,6 +201,33 @@ public class Main {
                 }
 
                 printController.printExpedient(enrollments);
+            }
+            case "-c", "--close" -> {
+                if (args.length < 2) {
+                    System.err.println("There are not enough arguments.");
+                    System.out.println("Usage: --close {options}");
+                    return;
+                }
+                if (args.length > 2) {
+                    switch (args[2]) {
+                        case "--force", "-f" -> {
+                            scoresController.closeActualCourses();
+                            return;
+                        }
+                        default -> {
+                            System.err.println("Please enter a valid option.");
+                            System.out.println("Usage: --close {options}");
+                            return;
+                        }
+                    }
+                }
+                LocalDate actualDate = LocalDate.now();
+
+                if (actualDate.getMonthValue() == 7 || actualDate.getMonthValue() == 8 || actualDate.getMonthValue() == 9 ) {
+                    scoresController.closeActualCourses();
+                } else {
+                    System.err.println("Actually you cannot to close actual courses now.");
+                }
             }
         }
     }
