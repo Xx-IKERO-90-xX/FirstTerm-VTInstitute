@@ -1,6 +1,6 @@
 package org.vtinstitute.handler;
 
-import org.vtinstitute.models.Student;
+import org.vtinstitute.models.entity.Student;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;

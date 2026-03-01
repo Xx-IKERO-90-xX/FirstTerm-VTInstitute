@@ -1,4 +1,4 @@
-package org.vtinstitute.models;
+package org.vtinstitute.models.entity;
 
 import jakarta.persistence.*;
 

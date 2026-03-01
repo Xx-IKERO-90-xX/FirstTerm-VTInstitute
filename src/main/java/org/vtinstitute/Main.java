@@ -1,23 +1,20 @@
 package org.vtinstitute;
 
 import org.vtinstitute.controller.*;
-import org.vtinstitute.models.Enrollment;
-import org.vtinstitute.models.Subject;
+import org.vtinstitute.models.entity.Enrollment;
 
 import java.sql.SQLException;
-import java.time.LocalDate;
 import java.util.List;
-import java.util.Map;
 
 import static java.lang.Integer.parseInt;
 
+import java.io.IOException;
+
 public class Main {
-    private static CourseController courseController = new CourseController();
     private static StudentsController studentsController = new StudentsController();
     private static EnrollmentController enrollmentController = new EnrollmentController();
-    private static SubjectController subjectController = new SubjectController();
-    private static ScoresController scoresController = new ScoresController();
-    private static PrintController printController = new  PrintController();
+    private static PrintController printController = new PrintController();
+    private static ScoreController scoreController = new ScoreController();
 
     public static void showDocumentation() {
         System.out.println("""
@@ -37,7 +34,7 @@ public class Main {
             =======================
         """);
     }
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, IOException {
 
         switch (args[0]){
             case "--help", "-h" -> {
@@ -78,46 +75,7 @@ public class Main {
                     return;
                 }
 
-                if (studentsController.studentExists(studentCard) && courseController.courseExists(courseId)){
-                    if (enrollmentController.isFirstEnrollment(studentCard)) {
-                        // Get subjects of first year
-                        List<Subject> subjectsFirstYear = subjectController.getCourseSubject(courseId, 1);
-
-                        // Create the enrollment
-                        enrollmentController.enrollStudent(studentCard, courseId, year);
-
-                        // Adds Subject initial scores for the new enrollment.
-                        Enrollment enrollment = enrollmentController.getLastStudentEnrollment(studentCard);
-
-                        for (Subject subject : subjectsFirstYear) {
-                            scoresController.addNewScores(enrollment.getId(), subject.getId(), 0);
-                        }
-                    } else {
-                        // Gets second year subjects from a course.
-                        List<Subject> subjectsSecondYear = subjectController.getCourseSubject(courseId, 2);
-
-                        // Creates the second enrollment.
-                        enrollmentController.enrollStudent(studentCard, courseId, year);
-
-                        // Get the new enrollment created.
-                        Enrollment enrollment = enrollmentController.getLastStudentEnrollment(studentCard);
-
-                        // Adds Subject initial scores for the second year.
-                        for (Subject subject : subjectsSecondYear) {
-                            scoresController.addNewScores(enrollment.getId(), subject.getId(), 0);
-                        }
-
-                        // Get not passed students
-                        List<Map<String, Object>> notPassedSubjects = scoresController.getNotPassedSubjects(enrollment.getId());
-                        for (Map<String, Object> subjectData : notPassedSubjects) {
-                            int subjectCode = (int) subjectData.get("subject");
-                            int score = (int) subjectData.get("score");
-                            scoresController.addNewScores(enrollment.getId(), subjectCode, score);
-                        }
-                    }
-                } else {
-                    System.err.println("Some of records aren't exists in the Database.");
-                }
+                enrollmentController.enrollStudentApi(studentCard, courseId, year);
             }
             case "--qualify", "-q" -> {
                 if (args.length < 4) {
@@ -137,12 +95,7 @@ public class Main {
                         return;
                     }
 
-                    if (score < 0 || score > 10) {
-                        System.err.println("Score must be between 0 and 10.");
-                        return;
-                    }
-
-                    scoresController.updateScore(enrollment, subject, score);
+                    // Aquí va el código.
                 }
             }
 
@@ -168,40 +121,11 @@ public class Main {
                     System.err.println("Course id must be numeric.");
                     return;
                 }
-
-                // We check if student and course exists.
-                if (!studentsController.studentExists(idCard)){
-                    System.err.println("The student with id " + idCard + " does not exist in the database.");
-                    return;
-                }
-                if (!courseController.courseExists(idCourse)){
-                    System.err.println("Course with id " + idCourse + " does not exist in the database.");
-                    return;
-                }
-
-                // We get the student enrollments from a specific cours.
-                List<Enrollment> enrollments = enrollmentController.getStudentEnrollmentsCourse(idCard, idCourse);
-                if (enrollments.isEmpty()) {
-                    System.err.println("There are no enrolled students in the database to the course " + idCourse + ".");
-                    return;
-                }
-
-                if (args.length == 4) {
-                    switch (args[3]) {
-                        case "--file", "-f" -> {
-                            printController.printExpedientTXT(idCard, idCourse, enrollments);
-                            return;
-                        }
-                        default -> {
-                            System.err.println("Please enter a valid option.");
-                            System.out.println("Usage: --print {studentIdCard} {option}");
-                            return;
-                        }
-                    }
-                }
-
+                List<Enrollment> enrollments = enrollmentController.getEnrollmentsByStudentCours(idCard, idCourse);
                 printController.printExpedient(enrollments);
+                // Aquí va el codigo 
             }
+            /** 
             case "-c", "--close" -> {
                 if (args.length < 2) {
                     System.err.println("There are not enough arguments.");
@@ -229,6 +153,7 @@ public class Main {
                     System.err.println("Actually you cannot to close actual courses now.");
                 }
             }
+            **/
         }
     }
 }

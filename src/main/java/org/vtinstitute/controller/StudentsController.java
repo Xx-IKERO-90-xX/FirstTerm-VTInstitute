@@ -3,7 +3,8 @@ package org.vtinstitute.controller;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.vtinstitute.handler.SAXHandler;
-import org.vtinstitute.models.Student;
+import org.vtinstitute.models.ApiManager;
+import org.vtinstitute.models.entity.Student;
 import org.vtinstitute.tools.HibernateUtils;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -29,12 +30,12 @@ public class StudentsController {
     private SAXParser saxParser = null;
     private String xsdPath = "src/main/resources/Students.xsd";
     private LogsController logsController = new LogsController();
+    private ApiManager apiManager;
 
     // Function that creates the SAX parser.
     private SAXParser createSaxParser() {
         try {
             logsController.logInfo("Creating SAXParser");
-
             SAXParserFactory factory = SAXParserFactory.newInstance();
             factory.setNamespaceAware(true);
             return factory.newSAXParser();
@@ -46,17 +47,12 @@ public class StudentsController {
     }
 
     // Function that adds Students to a DB
-    private void addStudentDB(Student student) {
-        Transaction tx = null;
-
-        try (Session session = HibernateUtils.getSessionFactory().openSession() ) {
-            logsController.logInfo("Adding student " + student.getIdcard() + " to DB");
-            tx = session.beginTransaction();
-            session.persist(student);
-            tx.commit();
-        } catch (Exception e) {
-            if (tx != null) tx.rollback();
-            System.out.println("Student " + student.getIdcard() + " repeated.");
+    private void addStudentAPI(Student student) throws IOException {
+        int status = apiManager.addStudentAPI(student);
+        if (status == 200 || status == 201) {
+            System.out.println("Usuario " + student.getIdcard() + " added!!");
+        } else {
+            System.out.println("User skipped");
         }
     }
 
@@ -103,7 +99,7 @@ public class StudentsController {
     }
 
     // Function that reads the XML and operates with it.
-    public void addStudentsXML(String xmlName) {
+    public void addStudentsXML(String xmlName) throws IOException {
         var xsdFile = new File(xsdPath);
         List<Student> students = new ArrayList<>();
         String xmlPath = "inputs/" + xmlName;
@@ -136,11 +132,7 @@ public class StudentsController {
 
         if (!students.isEmpty()) {
             for (Student student : students) {
-                try {
-                    addStudentDB(student);
-                } catch (Exception e) {
-                    System.out.println("Skipping Student " + student.getIdcard() + " because exists.");
-                }
+                addStudentAPI(student);
             }
         }
         System.out.println("\nStudents list size: " + students.size());
@@ -188,6 +180,4 @@ public class StudentsController {
             System.err.println("There was a failure deleting the student " + idCard);
         }
     }
-
-
 }
